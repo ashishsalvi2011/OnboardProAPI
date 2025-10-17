@@ -1,0 +1,30 @@
+2025-10-17 12:09:07.278 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-17 12:09:07.282 +05:30 [INF] CORS policy execution successful.
+2025-10-17 12:09:07.282 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - 204 null null 5.2489ms
+2025-10-17 12:09:07.283 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-17 12:09:07.284 +05:30 [INF] CORS policy execution successful.
+2025-10-17 12:09:07.286 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.MenuController.GetMenusByRole (OnboardPro)'
+2025-10-17 12:09:07.286 +05:30 [INF] Route matched with {action = "GetMenusByRole", controller = "Menu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMenusByRole(Int32) on controller OnboardPro.Controllers.MenuController (OnboardPro).
+2025-10-17 12:09:07.289 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnboardPro.Models.MenuDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 12:09:07.289 +05:30 [INF] Executed action OnboardPro.Controllers.MenuController.GetMenusByRole (OnboardPro) in 1.7912ms
+2025-10-17 12:09:07.289 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.MenuController.GetMenusByRole (OnboardPro)'
+2025-10-17 12:09:07.289 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - 200 null application/json; charset=utf-8 6.0141ms
+2025-10-17 12:09:10.543 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-17 12:09:10.543 +05:30 [INF] CORS policy execution successful.
+2025-10-17 12:09:10.544 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.MenuController.GetMenusByRole (OnboardPro)'
+2025-10-17 12:09:10.544 +05:30 [INF] Route matched with {action = "GetMenusByRole", controller = "Menu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMenusByRole(Int32) on controller OnboardPro.Controllers.MenuController (OnboardPro).
+2025-10-17 12:09:10.546 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnboardPro.Models.MenuDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 12:09:10.546 +05:30 [INF] Executed action OnboardPro.Controllers.MenuController.GetMenusByRole (OnboardPro) in 2.172ms
+2025-10-17 12:09:10.546 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.MenuController.GetMenusByRole (OnboardPro)'
+2025-10-17 12:09:10.546 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - 200 null application/json; charset=utf-8 2.9376ms
+2025-10-17 12:09:21.813 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-17 12:09:21.813 +05:30 [INF] CORS policy execution successful.
+2025-10-17 12:09:21.813 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - 204 null null 0.2149ms
+2025-10-17 12:09:21.814 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-17 12:09:21.815 +05:30 [INF] CORS policy execution successful.
+2025-10-17 12:09:21.815 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.MenuController.GetMenusByRole (OnboardPro)'
+2025-10-17 12:09:21.815 +05:30 [INF] Route matched with {action = "GetMenusByRole", controller = "Menu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMenusByRole(Int32) on controller OnboardPro.Controllers.MenuController (OnboardPro).
+2025-10-17 12:09:21.817 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnboardPro.Models.MenuDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-17 12:09:21.818 +05:30 [INF] Executed action OnboardPro.Controllers.MenuController.GetMenusByRole (OnboardPro) in 2.7099ms
+2025-10-17 12:09:21.818 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.MenuController.GetMenusByRole (OnboardPro)'
+2025-10-17 12:09:21.818 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - 200 null application/json; charset=utf-8 3.4812ms

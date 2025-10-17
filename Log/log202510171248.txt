@@ -1,0 +1,32 @@
+2025-10-17 12:48:00.131 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-17 12:48:00.135 +05:30 [INF] CORS policy execution successful.
+2025-10-17 12:48:00.135 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - 204 null null 3.7808ms
+2025-10-17 12:48:00.136 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-17 12:48:00.136 +05:30 [INF] CORS policy execution successful.
+2025-10-17 12:48:00.136 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17-10-2025 07:02:04', Current time (UTC): '17-10-2025 07:18:00'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-10-17 12:48:00.137 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17-10-2025 07:02:04', Current time (UTC): '17-10-2025 07:18:00'.
+2025-10-17 12:48:00.137 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17-10-2025 07:02:04', Current time (UTC): '17-10-2025 07:18:00'.
+2025-10-17 12:48:00.137 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-17 12:48:00.137 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-17 12:48:00.137 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - 401 0 null 1.102ms
+2025-10-17 12:48:08.512 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-17 12:48:08.513 +05:30 [INF] CORS policy execution successful.
+2025-10-17 12:48:08.513 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - 204 null null 0.187ms
+2025-10-17 12:48:08.513 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-17 12:48:08.513 +05:30 [INF] CORS policy execution successful.
+2025-10-17 12:48:08.514 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17-10-2025 07:02:04', Current time (UTC): '17-10-2025 07:18:08'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-10-17 12:48:08.514 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17-10-2025 07:02:04', Current time (UTC): '17-10-2025 07:18:08'.
+2025-10-17 12:48:08.514 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17-10-2025 07:02:04', Current time (UTC): '17-10-2025 07:18:08'.
+2025-10-17 12:48:08.514 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-17 12:48:08.514 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-17 12:48:08.514 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - 401 0 null 0.9348ms

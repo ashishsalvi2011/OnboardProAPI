@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "OnboardPro.Controllers.LoginOTPController",
+    "Method": "GetUserByMobile",
+    "RelativePath": "api/LoginOTP/get-by-mobile/{mobileNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mobileNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.LoginOTPController",
+    "Method": "SendOTP",
+    "RelativePath": "api/LoginOTP/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "OnboardPro.Models.LoginOTPRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.LoginOTPController",
+    "Method": "VerifyOTP",
+    "RelativePath": "api/LoginOTP/verify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "OnboardPro.Models.VerifyOTPRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.MenuController",
+    "Method": "GetMenusByRole",
+    "RelativePath": "api/Menu/GetMenusByRole/{roleId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

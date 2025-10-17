@@ -1,0 +1,16 @@
+2025-10-16 18:48:43.683 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole?roleId=1 - null null
+2025-10-16 18:48:43.691 +05:30 [INF] CORS policy execution successful.
+2025-10-16 18:48:43.693 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole?roleId=1 - 204 null null 11.5654ms
+2025-10-16 18:48:43.695 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole?roleId=1 - null null
+2025-10-16 18:48:43.695 +05:30 [INF] CORS policy execution successful.
+2025-10-16 18:48:43.696 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole?roleId=1 - 404 0 null 0.5122ms
+2025-10-16 18:48:43.696 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5059/api/Menu/GetMenusByRole, Response status code: 404
+2025-10-16 18:48:47.644 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-16 18:48:47.644 +05:30 [INF] CORS policy execution successful.
+2025-10-16 18:48:47.644 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - 204 null null 0.2762ms
+2025-10-16 18:48:47.646 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-16 18:48:47.646 +05:30 [INF] CORS policy execution successful.
+2025-10-16 18:48:47.655 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-16 18:48:47.659 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-16 18:48:47.659 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - 401 0 null 13.7686ms

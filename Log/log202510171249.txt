@@ -1,0 +1,29 @@
+2025-10-17 12:49:45.838 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-17 12:49:45.848 +05:30 [INF] CORS policy execution successful.
+2025-10-17 12:49:45.851 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - 204 null null 12.0008ms
+2025-10-17 12:49:45.852 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-17 12:49:45.852 +05:30 [INF] CORS policy execution successful.
+2025-10-17 12:49:45.852 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17-10-2025 07:02:04', Current time (UTC): '17-10-2025 07:19:45'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-10-17 12:49:45.852 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17-10-2025 07:02:04', Current time (UTC): '17-10-2025 07:19:45'.
+2025-10-17 12:49:45.852 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17-10-2025 07:02:04', Current time (UTC): '17-10-2025 07:19:45'.
+2025-10-17 12:49:45.853 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-17 12:49:45.853 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-17 12:49:45.853 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - 401 0 null 1.1446ms
+2025-10-17 12:49:48.333 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-17 12:49:48.333 +05:30 [INF] CORS policy execution successful.
+2025-10-17 12:49:48.333 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17-10-2025 07:02:04', Current time (UTC): '17-10-2025 07:19:48'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-10-17 12:49:48.333 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17-10-2025 07:02:04', Current time (UTC): '17-10-2025 07:19:48'.
+2025-10-17 12:49:48.333 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '17-10-2025 07:02:04', Current time (UTC): '17-10-2025 07:19:48'.
+2025-10-17 12:49:48.333 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-17 12:49:48.333 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-17 12:49:48.333 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - 401 0 null 0.7304ms

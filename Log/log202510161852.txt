@@ -1,0 +1,26 @@
+2025-10-16 18:52:54.550 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-16 18:52:54.560 +05:30 [INF] CORS policy execution successful.
+2025-10-16 18:52:54.560 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Menu/GetMenusByRole/1 - 204 null null 10.8967ms
+2025-10-16 18:52:54.562 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - null null
+2025-10-16 18:52:54.562 +05:30 [INF] CORS policy execution successful.
+2025-10-16 18:52:54.563 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.MenuController.GetMenusByRole (OnboardPro)'
+2025-10-16 18:52:54.563 +05:30 [INF] Route matched with {action = "GetMenusByRole", controller = "Menu"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMenusByRole(Int32) on controller OnboardPro.Controllers.MenuController (OnboardPro).
+2025-10-16 18:52:54.563 +05:30 [INF] Executed action OnboardPro.Controllers.MenuController.GetMenusByRole (OnboardPro) in 0.41ms
+2025-10-16 18:52:54.563 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.MenuController.GetMenusByRole (OnboardPro)'
+2025-10-16 18:52:54.585 +05:30 [ERR] Unhandled Exception Occurred!
+System.InvalidOperationException: Unable to resolve service for type 'OnboardPro.Interfaces.Services.IMenuService' while attempting to activate 'OnboardPro.Controllers.MenuController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method35(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnboardPro.Helper.TenantMiddleware.InvokeAsync(HttpContext context, ITenantProvider tenantProvider, IConfiguration config) in D:\Ashish_Salvi\github\OnboardPro\API Project\OnboardPro\Helpers\TenantMiddleware.cs:line 54
+   at OnboardPro.Helper.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\Ashish_Salvi\github\OnboardPro\API Project\OnboardPro\Helpers\ExceptionMiddleware.cs:line 22
+2025-10-16 18:52:54.585 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Menu/GetMenusByRole/1 - 500 null application/json; charset=utf-8 23.6697ms

@@ -16,6 +16,18 @@ namespace OnboardPro.Extensions
             services.AddScoped<ILoginOTPRepository, LoginOTPRepository>();
             services.AddScoped<IMenuService,MenuService>();
             services.AddScoped<IMenuRepository, MenuRepository>();
+            services.AddScoped<IProjectService, ProjectService>();
+            services.AddScoped<IProjectRepository, ProjectRepository>();
+            services.AddScoped<ISkillMasterService, SkillMasterService>();
+            services.AddScoped<ISkillMasterRepository, SkillMasterRepository>();
+            services.AddScoped<IMasterService, MasterService>();
+            services.AddScoped<IMasterRepository, MasterRepository>();
+            services.AddScoped<IUserMasterService, UserMasterService>();
+            services.AddScoped<IUserMasterRepository, UserMasterRepository>();
+            services.AddScoped<IVendorMasterService, VendorMasterService>();
+            services.AddScoped<IVendorMasterRepository, VendorMasterRepository>();
+            services.AddScoped<ITrainingService, TrainingService>();
+            services.AddScoped<ITrainingRepository, TrainingRepository>();
 
             services.AddScoped<JwtService>();
             services.AddSingleton<IResponse, ResponseService>();

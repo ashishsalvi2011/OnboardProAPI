@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnboardPro")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e805e3bb55069619d9cebdc4697cdd5fee1bef7e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+550b5751b9448c2da24574f8918c470298888e2f")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnboardPro")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnboardPro")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

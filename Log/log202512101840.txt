@@ -1,0 +1,231 @@
+2025-12-10 18:40:19.692 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/UserMaster/users - null null
+2025-12-10 18:40:19.699 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:19.699 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/UserMaster/users - 204 null null 6.7557ms
+2025-12-10 18:40:19.707 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/UserMaster/users - null null
+2025-12-10 18:40:19.708 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:19.709 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.UserMasterController.GetUsers (OnboardPro)'
+2025-12-10 18:40:19.709 +05:30 [INF] Route matched with {action = "GetUsers", controller = "UserMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers() on controller OnboardPro.Controllers.UserMasterController (OnboardPro).
+2025-12-10 18:40:19.711 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.UserResponseDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:19.711 +05:30 [INF] Executed action OnboardPro.Controllers.UserMasterController.GetUsers (OnboardPro) in 1.883ms
+2025-12-10 18:40:19.711 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.UserMasterController.GetUsers (OnboardPro)'
+2025-12-10 18:40:19.712 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/UserMaster/users - 200 null application/json; charset=utf-8 10.1396ms
+2025-12-10 18:40:20.709 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/VendorMaster/vendors - null null
+2025-12-10 18:40:20.709 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:20.709 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/VendorMaster/vendors - 204 null null 0.1465ms
+2025-12-10 18:40:20.710 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/VendorMaster/vendors - null null
+2025-12-10 18:40:20.710 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:20.710 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.VendorMasterController.GetVendor (OnboardPro)'
+2025-12-10 18:40:20.711 +05:30 [INF] Route matched with {action = "GetVendor", controller = "VendorMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetVendor() on controller OnboardPro.Controllers.VendorMasterController (OnboardPro).
+2025-12-10 18:40:20.714 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.VendorResponseDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:20.714 +05:30 [INF] Executed action OnboardPro.Controllers.VendorMasterController.GetVendor (OnboardPro) in 3.5592ms
+2025-12-10 18:40:20.714 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.VendorMasterController.GetVendor (OnboardPro)'
+2025-12-10 18:40:20.714 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/VendorMaster/vendors - 200 null application/json; charset=utf-8 4.1122ms
+2025-12-10 18:40:21.662 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/UserMaster/users - null null
+2025-12-10 18:40:21.662 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:21.662 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.UserMasterController.GetUsers (OnboardPro)'
+2025-12-10 18:40:21.662 +05:30 [INF] Route matched with {action = "GetUsers", controller = "UserMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers() on controller OnboardPro.Controllers.UserMasterController (OnboardPro).
+2025-12-10 18:40:21.665 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.UserResponseDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:21.665 +05:30 [INF] Executed action OnboardPro.Controllers.UserMasterController.GetUsers (OnboardPro) in 2.6228ms
+2025-12-10 18:40:21.665 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.UserMasterController.GetUsers (OnboardPro)'
+2025-12-10 18:40:21.665 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/UserMaster/users - 200 null application/json; charset=utf-8 2.9846ms
+2025-12-10 18:40:23.173 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Project/list - null null
+2025-12-10 18:40:23.173 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:23.173 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Project/list - 204 null null 0.1592ms
+2025-12-10 18:40:23.174 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Project/list - null null
+2025-12-10 18:40:23.174 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:23.174 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.ProjectController.GetProjects (OnboardPro)'
+2025-12-10 18:40:23.176 +05:30 [INF] Route matched with {action = "GetProjects", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProjects() on controller OnboardPro.Controllers.ProjectController (OnboardPro).
+2025-12-10 18:40:23.180 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.ProjectListDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:23.182 +05:30 [INF] Executed action OnboardPro.Controllers.ProjectController.GetProjects (OnboardPro) in 5.2599ms
+2025-12-10 18:40:23.182 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.ProjectController.GetProjects (OnboardPro)'
+2025-12-10 18:40:23.182 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Project/list - 200 null application/json; charset=utf-8 8.0176ms
+2025-12-10 18:40:25.620 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/VendorMaster/vendors - null null
+2025-12-10 18:40:25.621 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:25.621 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.VendorMasterController.GetVendor (OnboardPro)'
+2025-12-10 18:40:25.621 +05:30 [INF] Route matched with {action = "GetVendor", controller = "VendorMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetVendor() on controller OnboardPro.Controllers.VendorMasterController (OnboardPro).
+2025-12-10 18:40:25.623 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.VendorResponseDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:25.623 +05:30 [INF] Executed action OnboardPro.Controllers.VendorMasterController.GetVendor (OnboardPro) in 2.182ms
+2025-12-10 18:40:25.623 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.VendorMasterController.GetVendor (OnboardPro)'
+2025-12-10 18:40:25.623 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/VendorMaster/vendors - 200 null application/json; charset=utf-8 2.5432ms
+2025-12-10 18:40:27.347 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Training/trainings - null null
+2025-12-10 18:40:27.348 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:27.348 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Training/trainings - 204 null null 0.1328ms
+2025-12-10 18:40:27.348 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Training/trainings - null null
+2025-12-10 18:40:27.348 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:27.349 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.TrainingController.GetTraining (OnboardPro)'
+2025-12-10 18:40:27.349 +05:30 [INF] Route matched with {action = "GetTraining", controller = "Training"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTraining() on controller OnboardPro.Controllers.TrainingController (OnboardPro).
+2025-12-10 18:40:27.350 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.TrainingMasterResponseDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:27.350 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.GetTraining (OnboardPro) in 1.7841ms
+2025-12-10 18:40:27.350 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.GetTraining (OnboardPro)'
+2025-12-10 18:40:27.350 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Training/trainings - 200 null application/json; charset=utf-8 2.1256ms
+2025-12-10 18:40:28.783 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Training/status-list - null null
+2025-12-10 18:40:28.784 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:28.784 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Training/duration-list - null null
+2025-12-10 18:40:28.784 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Training/status-list - 204 null null 0.1312ms
+2025-12-10 18:40:28.784 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:28.784 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Training/duration-list - 204 null null 0.0455ms
+2025-12-10 18:40:28.784 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Training/duration-list - null null
+2025-12-10 18:40:28.784 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Training/status-list - null null
+2025-12-10 18:40:28.784 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:28.784 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:28.784 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro)'
+2025-12-10 18:40:28.784 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro)'
+2025-12-10 18:40:28.785 +05:30 [INF] Route matched with {action = "GetStatusList", controller = "Training"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStatusList() on controller OnboardPro.Controllers.TrainingController (OnboardPro).
+2025-12-10 18:40:28.785 +05:30 [INF] Route matched with {action = "GetDurationList", controller = "Training"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDurationList() on controller OnboardPro.Controllers.TrainingController (OnboardPro).
+2025-12-10 18:40:28.787 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.TrainingStatusDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:28.787 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro) in 2.5621ms
+2025-12-10 18:40:28.787 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro)'
+2025-12-10 18:40:28.788 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.TrainingDurationDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:28.788 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Training/status-list - 200 null application/json; charset=utf-8 3.4143ms
+2025-12-10 18:40:28.788 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro) in 3.3017ms
+2025-12-10 18:40:28.788 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro)'
+2025-12-10 18:40:28.789 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Training/duration-list - 200 null application/json; charset=utf-8 4.1871ms
+2025-12-10 18:40:31.183 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Training/status-list - null null
+2025-12-10 18:40:31.183 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Training/duration-list - null null
+2025-12-10 18:40:31.183 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:31.183 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:31.183 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro)'
+2025-12-10 18:40:31.183 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro)'
+2025-12-10 18:40:31.183 +05:30 [INF] Route matched with {action = "GetDurationList", controller = "Training"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDurationList() on controller OnboardPro.Controllers.TrainingController (OnboardPro).
+2025-12-10 18:40:31.183 +05:30 [INF] Route matched with {action = "GetStatusList", controller = "Training"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStatusList() on controller OnboardPro.Controllers.TrainingController (OnboardPro).
+2025-12-10 18:40:31.186 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.TrainingStatusDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:31.186 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro) in 2.5333ms
+2025-12-10 18:40:31.186 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro)'
+2025-12-10 18:40:31.186 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Training/status-list - 200 null application/json; charset=utf-8 2.9087ms
+2025-12-10 18:40:31.186 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.TrainingDurationDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:31.187 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro) in 3.3ms
+2025-12-10 18:40:31.187 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro)'
+2025-12-10 18:40:31.187 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Training/duration-list - 200 null application/json; charset=utf-8 4.4332ms
+2025-12-10 18:40:33.383 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Training/duration-list - null null
+2025-12-10 18:40:33.383 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Training/status-list - null null
+2025-12-10 18:40:33.383 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:33.383 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:33.383 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro)'
+2025-12-10 18:40:33.383 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro)'
+2025-12-10 18:40:33.383 +05:30 [INF] Route matched with {action = "GetStatusList", controller = "Training"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStatusList() on controller OnboardPro.Controllers.TrainingController (OnboardPro).
+2025-12-10 18:40:33.383 +05:30 [INF] Route matched with {action = "GetDurationList", controller = "Training"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDurationList() on controller OnboardPro.Controllers.TrainingController (OnboardPro).
+2025-12-10 18:40:33.386 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.TrainingDurationDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:33.386 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro) in 2.6446ms
+2025-12-10 18:40:33.386 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro)'
+2025-12-10 18:40:33.386 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.TrainingStatusDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:33.386 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Training/duration-list - 200 null application/json; charset=utf-8 3.2354ms
+2025-12-10 18:40:33.387 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro) in 3.0965ms
+2025-12-10 18:40:33.387 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro)'
+2025-12-10 18:40:33.387 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Training/status-list - 200 null application/json; charset=utf-8 3.6934ms
+2025-12-10 18:40:35.263 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Training/status-list - null null
+2025-12-10 18:40:35.263 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Training/duration-list - null null
+2025-12-10 18:40:35.263 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:35.263 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:35.263 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Training/status-list - 204 null null 0.1998ms
+2025-12-10 18:40:35.263 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Training/duration-list - 204 null null 0.0967ms
+2025-12-10 18:40:35.264 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Training/duration-list - null null
+2025-12-10 18:40:35.264 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:35.264 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Training/status-list - null null
+2025-12-10 18:40:35.264 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:35.265 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro)'
+2025-12-10 18:40:35.265 +05:30 [INF] Route matched with {action = "GetStatusList", controller = "Training"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStatusList() on controller OnboardPro.Controllers.TrainingController (OnboardPro).
+2025-12-10 18:40:35.265 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro)'
+2025-12-10 18:40:35.265 +05:30 [INF] Route matched with {action = "GetDurationList", controller = "Training"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDurationList() on controller OnboardPro.Controllers.TrainingController (OnboardPro).
+2025-12-10 18:40:35.267 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.TrainingStatusDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:35.267 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.TrainingDurationDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:35.268 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro) in 3.1598ms
+2025-12-10 18:40:35.268 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro) in 3.1914ms
+2025-12-10 18:40:35.268 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro)'
+2025-12-10 18:40:35.268 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro)'
+2025-12-10 18:40:35.268 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Training/status-list - 200 null application/json; charset=utf-8 3.8117ms
+2025-12-10 18:40:35.268 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Training/duration-list - 200 null application/json; charset=utf-8 3.976ms
+2025-12-10 18:40:37.375 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Training/status-list - null null
+2025-12-10 18:40:37.375 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Training/duration-list - null null
+2025-12-10 18:40:37.375 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:37.375 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:37.376 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro)'
+2025-12-10 18:40:37.376 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro)'
+2025-12-10 18:40:37.376 +05:30 [INF] Route matched with {action = "GetStatusList", controller = "Training"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetStatusList() on controller OnboardPro.Controllers.TrainingController (OnboardPro).
+2025-12-10 18:40:37.376 +05:30 [INF] Route matched with {action = "GetDurationList", controller = "Training"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDurationList() on controller OnboardPro.Controllers.TrainingController (OnboardPro).
+2025-12-10 18:40:37.378 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.TrainingStatusDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:37.378 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro) in 2.3242ms
+2025-12-10 18:40:37.378 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.GetStatusList (OnboardPro)'
+2025-12-10 18:40:37.378 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Training/status-list - 200 null application/json; charset=utf-8 2.8463ms
+2025-12-10 18:40:37.379 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.TrainingDurationDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:37.379 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro) in 3.3872ms
+2025-12-10 18:40:37.379 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.GetDurationList (OnboardPro)'
+2025-12-10 18:40:37.379 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Training/duration-list - 200 null application/json; charset=utf-8 4.0051ms
+2025-12-10 18:40:41.195 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/VendorMaster/vendors - null null
+2025-12-10 18:40:41.195 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:41.195 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/VendorMaster/vendors - 204 null null 0.1805ms
+2025-12-10 18:40:41.196 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/VendorMaster/vendors - null null
+2025-12-10 18:40:41.196 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:41.196 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.VendorMasterController.GetVendor (OnboardPro)'
+2025-12-10 18:40:41.196 +05:30 [INF] Route matched with {action = "GetVendor", controller = "VendorMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetVendor() on controller OnboardPro.Controllers.VendorMasterController (OnboardPro).
+2025-12-10 18:40:41.198 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.VendorResponseDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:41.198 +05:30 [INF] Executed action OnboardPro.Controllers.VendorMasterController.GetVendor (OnboardPro) in 1.9713ms
+2025-12-10 18:40:41.198 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.VendorMasterController.GetVendor (OnboardPro)'
+2025-12-10 18:40:41.198 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/VendorMaster/vendors - 200 null application/json; charset=utf-8 2.4214ms
+2025-12-10 18:40:41.747 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/UserMaster/users - null null
+2025-12-10 18:40:41.747 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:41.747 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/UserMaster/users - 204 null null 0.1611ms
+2025-12-10 18:40:41.748 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/UserMaster/users - null null
+2025-12-10 18:40:41.748 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:41.748 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.UserMasterController.GetUsers (OnboardPro)'
+2025-12-10 18:40:41.748 +05:30 [INF] Route matched with {action = "GetUsers", controller = "UserMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers() on controller OnboardPro.Controllers.UserMasterController (OnboardPro).
+2025-12-10 18:40:41.750 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.UserResponseDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:41.750 +05:30 [INF] Executed action OnboardPro.Controllers.UserMasterController.GetUsers (OnboardPro) in 1.7596ms
+2025-12-10 18:40:41.750 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.UserMasterController.GetUsers (OnboardPro)'
+2025-12-10 18:40:41.750 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/UserMaster/users - 200 null application/json; charset=utf-8 2.1088ms
+2025-12-10 18:40:42.452 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/SkillMaster/get-skills - null null
+2025-12-10 18:40:42.452 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:42.452 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/SkillMaster/get-skills - 204 null null 0.1683ms
+2025-12-10 18:40:42.453 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/SkillMaster/get-skills - null null
+2025-12-10 18:40:42.453 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:42.454 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.SkillMasterController.GetSkills (OnboardPro)'
+2025-12-10 18:40:42.455 +05:30 [INF] Route matched with {action = "GetSkills", controller = "SkillMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSkills() on controller OnboardPro.Controllers.SkillMasterController (OnboardPro).
+2025-12-10 18:40:42.457 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.SkillResponseDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:42.457 +05:30 [INF] Executed action OnboardPro.Controllers.SkillMasterController.GetSkills (OnboardPro) in 2.106ms
+2025-12-10 18:40:42.457 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.SkillMasterController.GetSkills (OnboardPro)'
+2025-12-10 18:40:42.457 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/SkillMaster/get-skills - 200 null application/json; charset=utf-8 3.7163ms
+2025-12-10 18:40:42.892 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Project/list - null null
+2025-12-10 18:40:42.892 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:42.892 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Project/list - 204 null null 0.1533ms
+2025-12-10 18:40:42.893 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Project/list - null null
+2025-12-10 18:40:42.894 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:42.894 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.ProjectController.GetProjects (OnboardPro)'
+2025-12-10 18:40:42.894 +05:30 [INF] Route matched with {action = "GetProjects", controller = "Project"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProjects() on controller OnboardPro.Controllers.ProjectController (OnboardPro).
+2025-12-10 18:40:42.896 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.ProjectListDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:42.896 +05:30 [INF] Executed action OnboardPro.Controllers.ProjectController.GetProjects (OnboardPro) in 1.8943ms
+2025-12-10 18:40:42.896 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.ProjectController.GetProjects (OnboardPro)'
+2025-12-10 18:40:42.896 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Project/list - 200 null application/json; charset=utf-8 2.9267ms
+2025-12-10 18:40:43.492 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/SkillMaster/get-skills - null null
+2025-12-10 18:40:43.492 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:43.492 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.SkillMasterController.GetSkills (OnboardPro)'
+2025-12-10 18:40:43.492 +05:30 [INF] Route matched with {action = "GetSkills", controller = "SkillMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSkills() on controller OnboardPro.Controllers.SkillMasterController (OnboardPro).
+2025-12-10 18:40:43.495 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.SkillResponseDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:43.495 +05:30 [INF] Executed action OnboardPro.Controllers.SkillMasterController.GetSkills (OnboardPro) in 2.5395ms
+2025-12-10 18:40:43.495 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.SkillMasterController.GetSkills (OnboardPro)'
+2025-12-10 18:40:43.495 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/SkillMaster/get-skills - 200 null application/json; charset=utf-8 2.9241ms
+2025-12-10 18:40:43.876 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/UserMaster/users - null null
+2025-12-10 18:40:43.876 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:43.876 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.UserMasterController.GetUsers (OnboardPro)'
+2025-12-10 18:40:43.876 +05:30 [INF] Route matched with {action = "GetUsers", controller = "UserMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers() on controller OnboardPro.Controllers.UserMasterController (OnboardPro).
+2025-12-10 18:40:43.878 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.UserResponseDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:43.878 +05:30 [INF] Executed action OnboardPro.Controllers.UserMasterController.GetUsers (OnboardPro) in 1.8692ms
+2025-12-10 18:40:43.878 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.UserMasterController.GetUsers (OnboardPro)'
+2025-12-10 18:40:43.878 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/UserMaster/users - 200 null application/json; charset=utf-8 2.3105ms
+2025-12-10 18:40:44.372 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/VendorMaster/vendors - null null
+2025-12-10 18:40:44.372 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:44.372 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.VendorMasterController.GetVendor (OnboardPro)'
+2025-12-10 18:40:44.373 +05:30 [INF] Route matched with {action = "GetVendor", controller = "VendorMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetVendor() on controller OnboardPro.Controllers.VendorMasterController (OnboardPro).
+2025-12-10 18:40:44.374 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.VendorResponseDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:44.374 +05:30 [INF] Executed action OnboardPro.Controllers.VendorMasterController.GetVendor (OnboardPro) in 1.646ms
+2025-12-10 18:40:44.374 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.VendorMasterController.GetVendor (OnboardPro)'
+2025-12-10 18:40:44.374 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/VendorMaster/vendors - 200 null application/json; charset=utf-8 2.1813ms
+2025-12-10 18:40:45.427 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Training/trainings - null null
+2025-12-10 18:40:45.427 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:45.428 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Training/trainings - 204 null null 0.2066ms
+2025-12-10 18:40:45.429 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5059/api/Training/trainings - null null
+2025-12-10 18:40:45.429 +05:30 [INF] CORS policy execution successful.
+2025-12-10 18:40:45.429 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.TrainingController.GetTraining (OnboardPro)'
+2025-12-10 18:40:45.429 +05:30 [INF] Route matched with {action = "GetTraining", controller = "Training"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTraining() on controller OnboardPro.Controllers.TrainingController (OnboardPro).
+2025-12-10 18:40:45.431 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.ListResponseModel`1[[OnboardPro.Models.TrainingMasterResponseDto, OnboardPro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 18:40:45.431 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.GetTraining (OnboardPro) in 1.8301ms
+2025-12-10 18:40:45.431 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.GetTraining (OnboardPro)'
+2025-12-10 18:40:45.431 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5059/api/Training/trainings - 200 null application/json; charset=utf-8 2.2019ms

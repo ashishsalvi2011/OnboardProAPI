@@ -48,6 +48,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "OnboardPro.Controllers.MasterController",
+    "Method": "GetGenders",
+    "RelativePath": "api/Master/genders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "OnboardPro.Controllers.MenuController",
     "Method": "GetMenusByRole",
     "RelativePath": "api/Menu/GetMenusByRole/{roleId}",
@@ -61,6 +71,176 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.ProjectController",
+    "Method": "GetProjects",
+    "RelativePath": "api/Project/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.ProjectController",
+    "Method": "SaveProject",
+    "RelativePath": "api/Project/save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "OnboardPro.Models.ProjectDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.SkillMasterController",
+    "Method": "GetAllSkillMasterData",
+    "RelativePath": "api/SkillMaster/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.SkillMasterController",
+    "Method": "GetSkills",
+    "RelativePath": "api/SkillMaster/get-skills",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.SkillMasterController",
+    "Method": "SaveSkill",
+    "RelativePath": "api/SkillMaster/save-skill",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skill",
+        "Type": "OnboardPro.Models.SkillDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.TrainingController",
+    "Method": "GetDurationList",
+    "RelativePath": "api/Training/duration-list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.TrainingController",
+    "Method": "SaveTraining",
+    "RelativePath": "api/Training/save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "OnboardPro.Models.TrainingMasterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.TrainingController",
+    "Method": "GetStatusList",
+    "RelativePath": "api/Training/status-list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.TrainingController",
+    "Method": "GetTraining",
+    "RelativePath": "api/Training/trainings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.UserMasterController",
+    "Method": "GetActiveRoles",
+    "RelativePath": "api/UserMaster/active-roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.UserMasterController",
+    "Method": "SaveUser",
+    "RelativePath": "api/UserMaster/save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "OnboardPro.Models.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.UserMasterController",
+    "Method": "GetUsers",
+    "RelativePath": "api/UserMaster/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.VendorMasterController",
+    "Method": "SaveVendor",
+    "RelativePath": "api/VendorMaster/save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vendor",
+        "Type": "OnboardPro.Models.VendorMasterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnboardPro.Controllers.VendorMasterController",
+    "Method": "GetVendor",
+    "RelativePath": "api/VendorMaster/vendors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

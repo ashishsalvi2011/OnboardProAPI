@@ -17,7 +17,6 @@ builder.Services.AddControllers();
 builder.Services.AddAppServices(builder.Configuration);
 builder.Services.AddCustomCors();
 builder.Services.AddJwtAuthentication(builder.Configuration);
-//builder.Services.AddAutoMapperProfiles();
 
 builder.Services.AddSwaggerGen(options =>
 {
@@ -39,14 +38,13 @@ app.UseStaticFiles(new StaticFileOptions
     RequestPath = "/Images"
 });
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI();
+    }
 
 app.UseHttpsRedirection();
-
 app.UseCors("MyCorse");
 app.UseAuthentication();
 app.UseMiddleware<ExceptionMiddleware>();

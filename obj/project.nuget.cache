@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZabJUFIFVLU=",
+  "dgSpecHash": "x0Lr4XLnPVc=",
   "success": true,
-  "projectFilePath": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardPro\\OnboardPro.csproj",
+  "projectFilePath": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\OnboardPro.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vishwanath\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Vishwanath\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

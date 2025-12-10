@@ -55,6 +55,7 @@ namespace OnboardPro.Repository
                 {
                     UserId = result?.UserId ?? request.UserId,
                     RoleId = result?.RoleId ?? request.RoleId,
+                    RoleName = result?.RoleName ?? request.RoleName,
                     Username = result?.Username ?? request.Username,
                     Status = result?.Status ?? false,
                     Message = result?.Message ?? "Verification failed."

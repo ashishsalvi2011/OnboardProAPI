@@ -1,0 +1,15 @@
+2025-12-10 17:56:48.062 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'OnboardPro.Models.SingleResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-10 17:56:48.104 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.SaveTraining (OnboardPro) in 80697.1991ms
+2025-12-10 17:56:48.105 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.SaveTraining (OnboardPro)'
+2025-12-10 17:56:48.105 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5059/api/Training/save - 400 null application/json; charset=utf-8 80703.3409ms
+2025-12-10 17:56:52.816 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5059/api/Training/save - null null
+2025-12-10 17:56:52.816 +05:30 [INF] CORS policy execution successful.
+2025-12-10 17:56:52.816 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5059/api/Training/save - 204 null null 0.9218ms
+2025-12-10 17:56:52.817 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5059/api/Training/save - application/json 169
+2025-12-10 17:56:52.818 +05:30 [INF] CORS policy execution successful.
+2025-12-10 17:56:52.818 +05:30 [INF] Executing endpoint 'OnboardPro.Controllers.TrainingController.SaveTraining (OnboardPro)'
+2025-12-10 17:56:52.818 +05:30 [INF] Route matched with {action = "SaveTraining", controller = "Training"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SaveTraining(OnboardPro.Models.TrainingMasterDto) on controller OnboardPro.Controllers.TrainingController (OnboardPro).
+2025-12-10 17:56:59.540 +05:30 [INF] Executing OkObjectResult, writing value of type 'OnboardPro.Models.SingleResponseModel`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-10 17:56:59.541 +05:30 [INF] Executed action OnboardPro.Controllers.TrainingController.SaveTraining (OnboardPro) in 6723.19ms
+2025-12-10 17:56:59.541 +05:30 [INF] Executed endpoint 'OnboardPro.Controllers.TrainingController.SaveTraining (OnboardPro)'
+2025-12-10 17:56:59.541 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5059/api/Training/save - 200 null application/json; charset=utf-8 6723.9291ms

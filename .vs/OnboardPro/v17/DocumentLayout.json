@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\interfaces\\services\\itrainingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:interfaces\\services\\itrainingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\controllers\\usermastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:controllers\\usermastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\interfaces\\repositories\\itrainingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:interfaces\\repositories\\itrainingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\interfaces\\repositories\\iusermasterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:interfaces\\repositories\\iusermasterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\interfaces\\services\\iusermasterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:interfaces\\services\\iusermasterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\interfaces\\services\\iprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:interfaces\\services\\iprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\services\\trainingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:services\\trainingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\services\\usermasterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:services\\usermasterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\repositories\\trainingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:repositories\\trainingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\repositories\\usermasterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:repositories\\usermasterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\models\\trainingmasterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:models\\trainingmasterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserMasterController.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Controllers\\UserMasterController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserMasterController.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Controllers\\UserMasterController.cs",
+              "RelativeToolTip": "Controllers\\UserMasterController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAGEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:46:50.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrainingController.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Controllers\\TrainingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TrainingController.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Controllers\\TrainingController.cs",
+              "RelativeToolTip": "Controllers\\TrainingController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAswGkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:46:45.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITrainingRepository.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Interfaces\\Repositories\\ITrainingRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Repositories\\ITrainingRepository.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Interfaces\\Repositories\\ITrainingRepository.cs",
+              "RelativeToolTip": "Interfaces\\Repositories\\ITrainingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:46:03.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserMasterRepository.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Interfaces\\Repositories\\IUserMasterRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Repositories\\IUserMasterRepository.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Interfaces\\Repositories\\IUserMasterRepository.cs",
+              "RelativeToolTip": "Interfaces\\Repositories\\IUserMasterRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:45:59.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ITrainingService.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Interfaces\\Services\\ITrainingService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Services\\ITrainingService.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Interfaces\\Services\\ITrainingService.cs",
+              "RelativeToolTip": "Interfaces\\Services\\ITrainingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:45:36.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserMasterService.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Interfaces\\Services\\IUserMasterService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Services\\IUserMasterService.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Interfaces\\Services\\IUserMasterService.cs",
+              "RelativeToolTip": "Interfaces\\Services\\IUserMasterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:45:33.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IProjectService.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Interfaces\\Services\\IProjectService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Services\\IProjectService.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Interfaces\\Services\\IProjectService.cs",
+              "RelativeToolTip": "Interfaces\\Services\\IProjectService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:45:28.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TrainingService.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Services\\TrainingService.cs",
+              "RelativeDocumentMoniker": "Services\\TrainingService.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Services\\TrainingService.cs",
+              "RelativeToolTip": "Services\\TrainingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:44:24.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserMasterService.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Services\\UserMasterService.cs",
+              "RelativeDocumentMoniker": "Services\\UserMasterService.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Services\\UserMasterService.cs",
+              "RelativeToolTip": "Services\\UserMasterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:44:12.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserMasterRepository.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Repositories\\UserMasterRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserMasterRepository.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Repositories\\UserMasterRepository.cs",
+              "RelativeToolTip": "Repositories\\UserMasterRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:43:49.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TrainingRepository.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Repositories\\TrainingRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\TrainingRepository.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Repositories\\TrainingRepository.cs",
+              "RelativeToolTip": "Repositories\\TrainingRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:42:51.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TrainingMasterDto.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Models\\TrainingMasterDto.cs",
+              "RelativeDocumentMoniker": "Models\\TrainingMasterDto.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Models\\TrainingMasterDto.cs",
+              "RelativeToolTip": "Models\\TrainingMasterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:40:47.09Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

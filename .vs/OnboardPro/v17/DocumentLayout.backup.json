@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\models\\trainingmasterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:models\\trainingmasterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\models\\tenantinfomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:models\\tenantinfomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|d:\\ashish_salvi\\github\\onboardpro\\api project\\onboardproapi\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E59118-F4B1-46EB-8608-66E91E70BBFB}|OnboardPro.csproj|solutionrelative:models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCMAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T11:38:13.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TrainingMasterDto.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Models\\TrainingMasterDto.cs",
+              "RelativeDocumentMoniker": "Models\\TrainingMasterDto.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Models\\TrainingMasterDto.cs",
+              "RelativeToolTip": "Models\\TrainingMasterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T11:32:33.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TenantInfoModel.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Models\\TenantInfoModel.cs",
+              "RelativeDocumentMoniker": "Models\\TenantInfoModel.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Models\\TenantInfoModel.cs",
+              "RelativeToolTip": "Models\\TenantInfoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T11:32:31.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "Models\\UserModel.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Models\\UserModel.cs",
+              "RelativeToolTip": "Models\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T11:32:29.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrainingController.cs",
+              "DocumentMoniker": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Controllers\\TrainingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TrainingController.cs",
+              "ToolTip": "D:\\Ashish_Salvi\\github\\OnboardPro\\API Project\\OnboardProAPI\\Controllers\\TrainingController.cs",
+              "RelativeToolTip": "Controllers\\TrainingController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEoAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T11:29:17.165Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

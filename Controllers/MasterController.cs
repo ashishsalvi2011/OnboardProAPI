@@ -11,21 +11,19 @@ namespace OnboardPro.Controllers
     public class MasterController : ControllerBase
     {
         private readonly IMasterService _masterService;
-
         public MasterController(IMasterService masterService)
         {
             _masterService = masterService;
         }
 
-        [HttpGet("genders")]
-        [Authorize]
-        public async Task<IActionResult> GetGenders()
+        [HttpGet("get")]
+        public async Task<IActionResult> GetMasterData([FromQuery] string? masterType)
         {
             try
-            {
-                var data = await _masterService.GetGenders();
+            { 
+                var data = await _masterService.GetMasterDataAsync(masterType);
 
-                return Ok(new ListResponseModel<GenderDto>
+                return Ok(new ListResponseModel<MasterDto>
                 {
                     Success = true,
                     Message = "genders list loaded successfully",
@@ -36,7 +34,8 @@ namespace OnboardPro.Controllers
             {
                 return StatusCode(500, new { success = false, message = ex.Message });
             }
+            
+           
         }
-
     }
 }

@@ -4,6 +4,6 @@ namespace OnboardPro.Interfaces.Services
 {
     public interface IMasterService
     {
-        Task<List<GenderDto>> GetGenders();
+        Task<List<MasterDto>> GetMasterDataAsync(string? masterType = null);
     }
 }

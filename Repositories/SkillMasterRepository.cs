@@ -74,5 +74,6 @@ namespace OnboardPro.Repositories
                 return skills.ToList();
             }
         }
+
     }
 }

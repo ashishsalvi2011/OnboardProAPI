@@ -4,6 +4,6 @@ namespace OnboardPro.Interfaces.Repositories
 {
     public interface IMasterRepository
     {
-        Task<List<GenderDto>> GetGenders();
+        Task<List<MasterDto>> GetMasterDataAsync(string? masterType = null);
     }
 }

@@ -28,6 +28,16 @@ namespace OnboardPro.Extensions
             services.AddScoped<IVendorMasterRepository, VendorMasterRepository>();
             services.AddScoped<ITrainingService, TrainingService>();
             services.AddScoped<ITrainingRepository, TrainingRepository>();
+            services.AddScoped<IWorkerService, WorkerService>();
+            services.AddScoped<IWorkerRepository, WorkerRepository>();
+            services.AddScoped<IEmployeeService, EmployeeService>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+
+            //Complince
+            services.AddScoped<IWorkerSkillVerificationService, WorkerSkillVerificationService>();
+            services.AddScoped<IWorkerSkillVerificationRepository, WorkerSkillVerificationRepository>();
+            services.AddScoped<IWorkerMedicalVerificationService, WorkerMedicalVerificationService>();
+            services.AddScoped<IWorkerMedicalVerificationRepository, WorkerMedicalVerificationRepository>();
 
             services.AddScoped<JwtService>();
             services.AddSingleton<IResponse, ResponseService>();

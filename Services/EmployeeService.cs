@@ -1,0 +1,21 @@
+﻿using OnboardPro.Interfaces.Repositories;
+using OnboardPro.Interfaces.Services;
+using OnboardPro.Models;
+
+namespace OnboardPro.Services
+{
+    public class EmployeeService : IEmployeeService
+    {
+        private readonly IEmployeeRepository _employeeRepository;
+
+        public EmployeeService(IEmployeeRepository employeeRepository)
+        {
+            _employeeRepository = employeeRepository;
+        }
+
+        public async Task<List<DraftWorkerDto>> GetDraftWorkersAsync()
+        {
+            return await _employeeRepository.GetDraftWorkersAsync();
+        }
+    }
+}

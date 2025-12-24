@@ -1,6 +1,7 @@
 ﻿using OnboardPro.Interfaces.Repositories;
 using OnboardPro.Interfaces.Services;
 using OnboardPro.Models;
+using OnboardPro.Repositories;
 
 namespace OnboardPro.Services
 {
@@ -12,10 +13,10 @@ namespace OnboardPro.Services
         {
             _masterRepo = masterRepo;
         }
-
-        public Task<List<GenderDto>> GetGenders()
+        public async Task<List<MasterDto>> GetMasterDataAsync(string? masterType = null)
         {
-            return _masterRepo.GetGenders();
+            return await _masterRepo.GetMasterDataAsync(masterType);
         }
+
     }
 }

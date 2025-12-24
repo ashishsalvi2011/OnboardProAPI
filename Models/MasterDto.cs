@@ -2,8 +2,10 @@
 {
     public class MasterDto
     {
+        public string Type { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
-
     public class GenderDto
     {
         public int? GenderId { get; set; }

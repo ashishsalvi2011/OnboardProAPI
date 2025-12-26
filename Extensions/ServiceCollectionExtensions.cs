@@ -38,6 +38,8 @@ namespace OnboardPro.Extensions
             services.AddScoped<IWorkerSkillVerificationRepository, WorkerSkillVerificationRepository>();
             services.AddScoped<IWorkerMedicalVerificationService, WorkerMedicalVerificationService>();
             services.AddScoped<IWorkerMedicalVerificationRepository, WorkerMedicalVerificationRepository>();
+            services.AddScoped<IWorkerDoctorVerificationService, WorkerDoctorVerificationService>();
+            services.AddScoped<IWorkerDoctorVerificationRepository, WorkerDoctorVerificationRepository>();
 
             services.AddScoped<JwtService>();
             services.AddSingleton<IResponse, ResponseService>();

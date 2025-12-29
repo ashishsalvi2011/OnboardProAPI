@@ -42,5 +42,58 @@ namespace OnboardPro.Controllers
                 });
             }
         }
+
+        [HttpPost("exit")]
+        [Authorize]
+        public async Task<IActionResult> ExitWorker([FromBody]  ExitWorkerDto dto)
+        {
+            try
+            {
+                var data = await _employeeService.ExitWorkerAsync(dto);
+                return Ok(new SingleResponseModel<int>
+                {
+                    Success = true,
+                    Message = "worker Exits successfully",
+                    Data = data
+                });
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ListResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Internal Server Error: " + ex.Message,
+                    Data = null
+                });
+            }
+        }
+
+        [HttpGet("onboard")]
+        [Authorize]
+        public async Task<IActionResult> GetOnboardWorkers()
+        {
+            try
+            {
+                var data = await _employeeService.GetOnBoardWorkersAsync();
+                return Ok(new ListResponseModel<OnBoardWorkerDto>
+                {
+                    Success = true,
+                    Message = "Onboard worker list loaded successfully",
+                    Data = data
+                });
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ListResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Internal Server Error: " + ex.Message,
+                    Data = null
+                });
+            }
+        }
+
     }
 }

@@ -59,8 +59,8 @@ namespace OnboardPro.Controllers
                 {
                     Success = true,
                     Message = newMedicalVerificationId == null
-                             ? "Medical Verification created successfully"
-                             : "Medical Verification updated successfully",
+                             ? "EHS Verification created successfully"
+                             : "EHS Verification updated successfully",
                     Data = newMedicalVerificationId
                 });
             }

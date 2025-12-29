@@ -1,17 +1,7 @@
 ﻿namespace OnboardPro.Models
 {
-    public class EHSVerificationPendingDto
+    public class EHSVerificationPendingDto: VerificationDto
     {
-        public int WorkerID { get; set; }
-        public string FullName { get; set; }
-        public string MobileNumber { get; set; }
-
-        public int ProjectID { get; set; }
-        public string ProjectName { get; set; }
-
-        public int? VendorId { get; set; }
-        public string VendorName { get; set; }
-
         public int? SkillVerificationUserId { get; set; }
         public string SkillVerificationBy { get; set; }
 
@@ -20,8 +10,6 @@
 
         public int WorkerCreatedUserId { get; set; }
         public string WorkerCreatedBy { get; set; }
-
-        public string Status { get; set; }
     }
     public class EHSVerificationSaveDto
     {

@@ -15,13 +15,13 @@ namespace OnboardPro.Services
         {
             return await _repository.GetAllQuestions();
         }
-        public async Task<List<WorkerMedicalVerificationDto>> GetWorkersReadyForMedicalVerificationAsync()
+        public async Task<List<WorkerDoctorVerificationDto>> GetWorkersReadyForDoctorVerificationAsync()
         {
-            return await _repository.GetWorkersReadyForMedicalVerificationAsync();
+            return await _repository.GetWorkersReadyForDoctorVerificationAsync();
         }
-        public async Task<int> SaveMedicalVerificationAsync(WorkerMedicalVerificationRequestDto dto)
+        public async Task<int> SaveDoctorVerificationAsync(DoctorVerificationRequestDto dto)
         {
-            return await _repository.SaveMedicalVerificationAsync(dto);
+            return await _repository.SaveDoctorVerificationAsync(dto);
         }
     }
 }

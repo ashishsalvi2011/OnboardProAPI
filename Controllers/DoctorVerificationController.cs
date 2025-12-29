@@ -47,12 +47,12 @@ namespace OnboardPro.Controllers
 
         [HttpGet("get")]
         [Authorize]
-        public async Task<IActionResult> GetWorkersReadyForMedicalVerification()
+        public async Task<IActionResult> GetWorkersReadyForDoctorVerification()
         {
             try
             {
-                var data = await _service.GetWorkersReadyForMedicalVerificationAsync();
-                return Ok(new ListResponseModel<WorkerMedicalVerificationDto>
+                var data = await _service.GetWorkersReadyForDoctorVerificationAsync();
+                return Ok(new ListResponseModel<WorkerDoctorVerificationDto>
                 {
                     Success = true,
                     Message = "worker verification list loaded successfully",
@@ -74,20 +74,20 @@ namespace OnboardPro.Controllers
 
 
         [HttpPost("save")]
-        public async Task<IActionResult> Save([FromBody] WorkerMedicalVerificationRequestDto dto)
+        public async Task<IActionResult> Save([FromBody] DoctorVerificationRequestDto dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
             try
             {
-                var newMedicalVerificationId = await _service.SaveMedicalVerificationAsync(dto);
+                var newMedicalVerificationId = await _service.SaveDoctorVerificationAsync(dto);
                 return Ok(new SingleResponseModel<int>
                 {
                     Success = true,
                     Message = newMedicalVerificationId == null
-                             ? "Medical Verification created successfully"
-                             : "Medical Verification updated successfully",
+                             ? "Doctor Verification created successfully"
+                             : "Doctor Verification updated successfully",
                     Data = newMedicalVerificationId
                 });
             }

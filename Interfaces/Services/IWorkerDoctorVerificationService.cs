@@ -5,7 +5,7 @@ namespace OnboardPro.Interfaces.Services
     public interface IWorkerDoctorVerificationService
     {
         Task<List<QuestionDto>> GetAllQuestions();
-        Task<List<WorkerMedicalVerificationDto>> GetWorkersReadyForMedicalVerificationAsync();
-        Task<int> SaveMedicalVerificationAsync(WorkerMedicalVerificationRequestDto dto);
+        Task<List<WorkerDoctorVerificationDto>> GetWorkersReadyForDoctorVerificationAsync();
+        Task<int> SaveDoctorVerificationAsync(DoctorVerificationRequestDto dto);
     }
 }

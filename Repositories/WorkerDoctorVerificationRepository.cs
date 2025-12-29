@@ -1,4 +1,5 @@
-﻿using Dapper;
+﻿using Azure.Core;
+using Dapper;
 using Microsoft.Data.SqlClient;
 using OnboardPro.Interfaces.Repositories;
 using OnboardPro.Models;
@@ -24,53 +25,64 @@ namespace OnboardPro.Repositories
                 return questions.ToList();
             }
         }
-        public async Task<List<WorkerMedicalVerificationDto>> GetWorkersReadyForMedicalVerificationAsync()
+        public async Task<List<WorkerDoctorVerificationDto>> GetWorkersReadyForDoctorVerificationAsync()
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
             {
-                var workerSkills = await connection.QueryAsync<WorkerMedicalVerificationDto>(
-                    "[sp_GetWorkersReadyForMedicalVerification]",
+                var workerReadyForDoctorVerification = await connection.QueryAsync<WorkerDoctorVerificationDto>(
+                    "[sp_GetWorkersReadyForDoctorVerification]",
                     commandType: CommandType.StoredProcedure
                 );
-                return workerSkills.ToList();
+                return workerReadyForDoctorVerification.ToList();
             }
         }
-        public async Task<int> SaveMedicalVerificationAsync(WorkerMedicalVerificationRequestDto dto)
+        public async Task<int> SaveDoctorVerificationAsync(DoctorVerificationRequestDto dto)
         {
-            using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            //using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            //{
+            //    var responseTable = CreateResponseDataTable(dto.Questions);
+
+            //    var parameters = new DynamicParameters();
+
+            //    parameters.Add("@VerificationID", dto.VerificationID);
+            //    parameters.Add("@WorkerID", dto.WorkerId);
+            //    parameters.Add("@ExaminationDate", dto.ExaminationDate);
+            //    parameters.Add("@DoctorID", dto.UserId);
+            //    parameters.Add("@PrescriptionAttached", dto.PrescriptionAttached);
+            //    parameters.Add("@AcceptanceStatus", dto.AcceptanceStatus);
+
+            //    parameters.Add(
+            //        "@ResponseList",
+            //        responseTable.AsTableValuedParameter("dbo.DoctorVerificationResponseType")
+            //    );
+
+            //    parameters.Add("@UserId", dto.UserId);
+
+            //    await connection.ExecuteAsync(
+            //        "sp_InsertOrUpdateDoctorVerification",
+            //        parameters,
+            //        commandType: CommandType.StoredProcedure
+            //    );
+            //}
+        }
+        private DataTable CreateResponseDataTable(List<DoctorQuestionAnswerDto> responses)
+        {
+            var table = new DataTable();
+
+            table.Columns.Add("question_id", typeof(int));
+            table.Columns.Add("boolean_response", typeof(bool));
+            table.Columns.Add("remarks", typeof(string));
+
+            foreach (var r in responses)
             {
-                var parameters = new DynamicParameters();
-                    parameters.Add("@VerificationID", dto.VerificationID);
-                    parameters.Add("@WorkerID", dto.WorkerID);
-                    parameters.Add("@HealthCheckDate", dto.HealthCheckupDate);
-
-                    parameters.Add("@Pulse", dto.Pulse);
-                    parameters.Add("@SPO2", dto.SPO2);
-                    parameters.Add("@RespiratoryRate", dto.Rr);
-                    parameters.Add("@SkinTemperatureDegC", dto.SkinTemp);
-
-                    parameters.Add("@BP_Systolic", dto.BpSystolic);
-                    parameters.Add("@BP_Diastolic", dto.Diastolic);
-
-                    parameters.Add("@Sugar", dto.Sugar);
-                    parameters.Add("@WeightKg", dto.Weight);
-                    parameters.Add("@HeightCm", dto.Height);
-                    parameters.Add("@BMI", dto.BMI);
-
-                    parameters.Add("@BloodGroup", dto.BloodGroup);
-
-                    parameters.Add("@IsActive", dto.IsVerify);
-                    parameters.Add("@UserID", dto.CreatedBy);
-
-
-                var result = await connection.QueryFirstOrDefaultAsync<int>(
-                    "[sp_InsertOrUpdateWorkerMedicalVerification]",
-                    parameters,
-                    commandType: CommandType.StoredProcedure
+                table.Rows.Add(
+                    r.QuestionText,
+                    r.Answer,
+                    r.Remark
                 );
-
-                return result;
             }
+
+            return table;
         }
     }
 }

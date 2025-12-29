@@ -14,6 +14,7 @@ namespace OnboardPro.Repositories
         {
             _configuration = configuration;
         }
+
         public async Task<List<DraftWorkerDto>> GetDraftWorkersAsync()
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
@@ -25,5 +26,7 @@ namespace OnboardPro.Repositories
                 return vendors.ToList();
             }
         }
+
+
     }
 }

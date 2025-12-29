@@ -42,6 +42,8 @@ namespace OnboardPro.Extensions
             services.AddScoped<IWorkerEHSVerificationRepository, WorkerEHSVerificationRepository>();
             services.AddScoped<IFinalApprovalService, FinalApprovalService>();
             services.AddScoped<IFinalApprovalRepository, FinalApprovalRepository>();
+            services.AddScoped<IWorkerDoctorVerificationService, WorkerDoctorVerificationService>();
+            services.AddScoped<IWorkerDoctorVerificationRepository, WorkerDoctorVerificationRepository>();
 
             services.AddScoped<JwtService>();
             services.AddSingleton<IResponse, ResponseService>();

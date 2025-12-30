@@ -38,32 +38,31 @@ namespace OnboardPro.Repositories
         }
         public async Task<int> SaveDoctorVerificationAsync(DoctorVerificationRequestDto dto)
         {
-            //using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
-            //{
-            //    var responseTable = CreateResponseDataTable(dto.Questions);
+            using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            {
+                var responseTable = CreateResponseDataTable(dto.Questions);
 
-            //    var parameters = new DynamicParameters();
+                var parameters = new DynamicParameters();
 
-            //    parameters.Add("@VerificationID", dto.VerificationID);
-            //    parameters.Add("@WorkerID", dto.WorkerId);
-            //    parameters.Add("@ExaminationDate", dto.ExaminationDate);
-            //    parameters.Add("@DoctorID", dto.UserId);
-            //    parameters.Add("@PrescriptionAttached", dto.PrescriptionAttached);
-            //    parameters.Add("@AcceptanceStatus", dto.AcceptanceStatus);
+                parameters.Add("@VerificationID", dto.VerificationID);
+                parameters.Add("@WorkerID", dto.WorkerId);
+                parameters.Add("@PrescriptionAttached", dto.PrescriptionAttached);
 
-            //    parameters.Add(
-            //        "@ResponseList",
-            //        responseTable.AsTableValuedParameter("dbo.DoctorVerificationResponseType")
-            //    );
+                parameters.Add(
+                    "@ResponseList",
+                    responseTable.AsTableValuedParameter("dbo.DoctorVerificationResponseType")
+                );
 
-            //    parameters.Add("@UserId", dto.UserId);
+                parameters.Add("@UserId", dto.UserId);
 
-            //    await connection.ExecuteAsync(
-            //        "sp_InsertOrUpdateDoctorVerification",
-            //        parameters,
-            //        commandType: CommandType.StoredProcedure
-            //    );
-            //}
+                var result =  await connection.ExecuteAsync(
+                    "sp_InsertOrUpdateDoctorVerification",
+                    parameters,
+                    commandType: CommandType.StoredProcedure
+                );
+
+                return result;
+            }
         }
         private DataTable CreateResponseDataTable(List<DoctorQuestionAnswerDto> responses)
         {
@@ -76,7 +75,7 @@ namespace OnboardPro.Repositories
             foreach (var r in responses)
             {
                 table.Rows.Add(
-                    r.QuestionText,
+                    r.QuestionId,
                     r.Answer,
                     r.Remark
                 );

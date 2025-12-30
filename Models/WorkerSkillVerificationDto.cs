@@ -4,11 +4,11 @@ namespace OnboardPro.Models
 {
     public class VerificationDto
     {
-        public int WorkerID { get; set; }
+        public int WorkerId { get; set; }
         public string FullName { get; set; }
         public string MobileNumber { get; set; }
 
-        public int? ProjectID { get; set; }
+        public int? ProjectId { get; set; }
         public string ProjectName { get; set; }
 
         public int? VendorId { get; set; }

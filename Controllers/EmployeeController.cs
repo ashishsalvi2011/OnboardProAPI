@@ -95,5 +95,33 @@ namespace OnboardPro.Controllers
             }
         }
 
+        [HttpGet("id-card")]
+        [Authorize]
+        public async Task<IActionResult> GetWorkerIdCard()
+        {
+
+            try
+            {
+                var data = await _employeeService.GetIdCardDetails();
+                return Ok(new ListResponseModel<WorkerIdCardDto>
+                {
+                    Success = true,
+                    Message = "ID Cards list loaded successfully",
+                    Data = data
+                });
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ListResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Internal Server Error: " + ex.Message,
+                    Data = null
+                });
+            }
+           
+        }
+
     }
 }

@@ -39,4 +39,35 @@
         public string Status { get; set; }
         public bool IsActive { get; set; }
     }
+    public class WorkerIdCardDto
+    {
+        public int IdCardNo { get; set; }
+        public string Name { get; set; }
+        public string EmployeeId { get; set; }
+
+        public int ContractorId { get; set; }
+        public string ContractorName { get; set; }
+
+        public int ProjectId { get; set; }
+        public string ProjectName { get; set; }
+
+        public string Status { get; set; }
+        public string Designation { get; set; }
+
+        public decimal? WagesRate { get; set; }
+        public string WagesPeriod { get; set; }
+
+        public string Aadhaar { get; set; }
+        public string BloodGroup { get; set; }
+        public string EmergencyContact { get; set; }
+        public string HeightPass { get; set; }
+
+        public string MobileNo { get; set; }
+        public DateTime? ValidUpto { get; set; }
+        public string MedicallyFit { get; set; }
+        public DateTime? SafetyInductionDate { get; set; }
+
+        public string HelplineNo { get; set; }
+    }
+
 }

@@ -57,6 +57,17 @@ namespace OnboardPro.Repositories
                 return onBoardWorkers.ToList();
             }
         }
+        public async Task<List<WorkerIdCardDto>> GetWorkerIdCardAsync()
+        {
+            using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            {
+                var idCardDetails = await connection.QueryAsync<WorkerIdCardDto>(
+                    "sp_GetIDCardDetails",
+                    commandType: CommandType.StoredProcedure
+                );
+                return idCardDetails.ToList();
+            }
+        }
 
     }
 }

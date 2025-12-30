@@ -7,5 +7,6 @@ namespace OnboardPro.Interfaces.Repositories
         Task<List<DraftWorkerDto>> GetDraftWorkersAsync();
         Task<int> ExitWorkerAsync(ExitWorkerDto request);
         Task<List<OnBoardWorkerDto>> GetOnBoardWorkersAsync();
+        Task<List<WorkerIdCardDto>> GetWorkerIdCardAsync();
     }
 }

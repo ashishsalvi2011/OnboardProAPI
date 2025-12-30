@@ -23,5 +23,9 @@ namespace OnboardPro.Services
         {
             return await _employeeRepository.GetOnBoardWorkersAsync();
         }
+        public async Task<List<WorkerIdCardDto>> GetIdCardDetails()
+        {
+            return await _employeeRepository.GetWorkerIdCardAsync();
+        }
     }
 }

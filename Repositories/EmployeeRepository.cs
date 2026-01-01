@@ -68,6 +68,26 @@ namespace OnboardPro.Repositories
                 return idCardDetails.ToList();
             }
         }
+        public async Task<int> InsertOrUpdateWorkerRewardAsync(WorkerRewardUpsertDto dto)
+        {
+            using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            {
+                var parameters = new DynamicParameters();
 
+                parameters.Add("@RewardID", dto.RewardID);
+                parameters.Add("@WorkerID", dto.WorkerID);
+                parameters.Add("@RewardReason", dto.RewardReason);
+                parameters.Add("@IsActive", dto.IsActive);
+                parameters.Add("@UserID", dto.UserID);
+
+                var result = await connection.QueryFirstOrDefaultAsync<int>(
+                    "[sp_InsertOrUpdateWorkerReward]",
+                    parameters,
+                    commandType: CommandType.StoredProcedure
+                );
+
+                return result;
+            }
+        }
     }
 }

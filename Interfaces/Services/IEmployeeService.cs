@@ -8,5 +8,7 @@ namespace OnboardPro.Interfaces.Services
         Task<int> ExitWorkerAsync(ExitWorkerDto request);
         Task<List<OnBoardWorkerDto>> GetOnBoardWorkersAsync();
         Task<List<WorkerIdCardDto>> GetIdCardDetails();
+        Task<int> InsertOrUpdateRewardAsync(WorkerRewardUpsertDto dto);
+
     }
 }

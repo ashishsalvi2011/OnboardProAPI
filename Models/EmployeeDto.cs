@@ -69,5 +69,14 @@
 
         public string HelplineNo { get; set; }
     }
+    public class WorkerRewardUpsertDto
+    {
+        public int? RewardID { get; set; }   // NULL for insert
+        public int WorkerID { get; set; }
+        public string RewardReason { get; set; }
+        public bool IsActive { get; set; } = true;
+        public int UserID { get; set; }
+    }
+
 
 }

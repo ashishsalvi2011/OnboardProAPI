@@ -27,5 +27,9 @@ namespace OnboardPro.Services
         {
             return await _employeeRepository.GetWorkerIdCardAsync();
         }
+        public async Task<int> InsertOrUpdateRewardAsync(WorkerRewardUpsertDto dto)
+        {
+            return await _employeeRepository.InsertOrUpdateWorkerRewardAsync(dto);
+        }
     }
 }

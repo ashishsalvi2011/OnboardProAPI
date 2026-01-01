@@ -123,5 +123,31 @@ namespace OnboardPro.Controllers
            
         }
 
+        [HttpPost("reward")]
+        [Authorize]
+        public async Task<IActionResult> WorkerReward([FromBody] WorkerRewardUpsertDto dto)
+        {
+            try
+            {
+                var data = await _employeeService.InsertOrUpdateRewardAsync(dto);
+                return Ok(new SingleResponseModel<int>
+                {
+                    Success = true,
+                    Message = "Worker Reward saved successfully",
+                    Data = data
+                });
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ListResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Internal Server Error: " + ex.Message,
+                    Data = null
+                });
+            }
+        }
+
     }
 }

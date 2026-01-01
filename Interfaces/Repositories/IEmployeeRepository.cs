@@ -8,5 +8,6 @@ namespace OnboardPro.Interfaces.Repositories
         Task<int> ExitWorkerAsync(ExitWorkerDto request);
         Task<List<OnBoardWorkerDto>> GetOnBoardWorkersAsync();
         Task<List<WorkerIdCardDto>> GetWorkerIdCardAsync();
+        Task<int> InsertOrUpdateWorkerRewardAsync(WorkerRewardUpsertDto dto);
     }
 }

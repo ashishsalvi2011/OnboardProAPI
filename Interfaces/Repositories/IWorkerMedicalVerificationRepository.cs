@@ -6,5 +6,6 @@ namespace OnboardPro.Interfaces.Repositories
     {
         Task<List<WorkerMedicalVerificationDto>> GetWorkersReadyForMedicalVerificationAsync();
         Task<int> SaveMedicalVerificationAsync(WorkerMedicalVerificationRequestDto dto);
+        Task<int> ReturnWorkerMedicalVerification(WorkerMedicalVerificationReturnDto dto);
     }
 }

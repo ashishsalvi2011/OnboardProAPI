@@ -6,5 +6,6 @@ namespace OnboardPro.Interfaces.Repositories
     {
         Task<List<EHSVerificationPendingDto>> GetWorkersReadyForEHSVerificationAsync();
         Task<int> SaveEHSVerificationAsync(EHSVerificationSaveDto dto);
+        Task<int> ReturnWorkerEHSVerification(WorkerEHSVerificationReturnDto dto);
     }
 }

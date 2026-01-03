@@ -15,6 +15,10 @@ namespace OnboardPro.Services
         {
             return await _employeeRepository.GetDraftWorkersAsync();
         }
+        public async Task<List<OnBoardWorkerDto>> GetWorkersForExit()
+        {
+            return await _employeeRepository.GetWorkersForExit();
+        }
         public async Task<int> ExitWorkerAsync(ExitWorkerDto request)
         {
             return await _employeeRepository.ExitWorkerAsync(request);
@@ -30,6 +34,10 @@ namespace OnboardPro.Services
         public async Task<int> InsertOrUpdateRewardAsync(WorkerRewardUpsertDto dto)
         {
             return await _employeeRepository.InsertOrUpdateWorkerRewardAsync(dto);
+        }
+        public async Task<int> BlockOrUnblockWorkerAsync(WorkerBlockRequestDto dto)
+        {
+            return await _employeeRepository.BlockOrUnblockWorkerAsync(dto);
         }
     }
 }

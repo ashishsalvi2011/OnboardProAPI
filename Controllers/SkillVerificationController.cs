@@ -100,5 +100,36 @@ namespace OnboardPro.Controllers
             }
            
         }
+
+        [HttpPost("return-verification")]
+        [Authorize]
+        public async Task<IActionResult> ReturnWorkerSkillVerification([FromBody] WorkerSkillVerificationReturnDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            try
+            {
+                var newSkillVerificationReturnId = await _service.ReturnWorkerSkillVerification(dto);
+                return Ok(new SingleResponseModel<int>
+                {
+                    Success = true,
+                    Message = newSkillVerificationReturnId == null
+                             ? "Skill Verification return created successfully"
+                             : "Skill Verification return updated successfully",
+                    Data = newSkillVerificationReturnId
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new SingleResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = null
+                });
+            }
+
+        }
     }
 }

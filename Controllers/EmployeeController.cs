@@ -43,6 +43,32 @@ namespace OnboardPro.Controllers
             }
         }
 
+        [HttpGet("worker-for-exit")]
+        [Authorize]
+        public async Task<IActionResult> GetWorkersForExit()
+        {
+            try
+            {
+                var data = await _employeeService.GetWorkersForExit();
+                return Ok(new ListResponseModel<OnBoardWorkerDto>
+                {
+                    Success = true,
+                    Message = "exit worker for exit list loaded successfully",
+                    Data = data
+                });
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ListResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Internal Server Error: " + ex.Message,
+                    Data = null
+                });
+            }
+        }
+
         [HttpPost("exit")]
         [Authorize]
         public async Task<IActionResult> ExitWorker([FromBody]  ExitWorkerDto dto)
@@ -149,5 +175,30 @@ namespace OnboardPro.Controllers
             }
         }
 
+        [HttpPost("block-unblock")]
+        [Authorize]
+        public async Task<IActionResult> BlockOrUnblockWorker([FromBody] WorkerBlockRequestDto dto)
+        {
+            try
+            {
+                var data = await _employeeService.BlockOrUnblockWorkerAsync(dto);
+                return Ok(new SingleResponseModel<int>
+                {
+                    Success = true,
+                    Message = "worker " + dto.Action + " successfully",
+                    Data = data
+                });
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ListResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Internal Server Error: " + ex.Message,
+                    Data = null
+                });
+            }
+        }
     }
 }

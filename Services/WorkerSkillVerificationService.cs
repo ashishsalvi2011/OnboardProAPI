@@ -23,5 +23,9 @@ namespace OnboardPro.Services
         {
             return await _repository.SaveSkillVerificationAsync(dto);
         }
+        public async Task<int> ReturnWorkerSkillVerification(WorkerSkillVerificationReturnDto dto)
+        {
+            return await _repository.ReturnWorkerSkillVerification(dto);
+        }
     }
 }

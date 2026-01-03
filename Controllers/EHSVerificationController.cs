@@ -75,5 +75,36 @@ namespace OnboardPro.Controllers
             }
 
         }
+
+        [HttpPost("return-verification")]
+        [Authorize]
+        public async Task<IActionResult> ReturnWorkerEHSVerification([FromBody] WorkerEHSVerificationReturnDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            try
+            {
+                var newEHSVerificationReturnId = await _service.ReturnWorkerEHSVerification(dto);
+                return Ok(new SingleResponseModel<int>
+                {
+                    Success = true,
+                    Message = newEHSVerificationReturnId == null
+                             ? "EHS Verification return created successfully"
+                             : "EHS Verification return updated successfully",
+                    Data = newEHSVerificationReturnId
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new SingleResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = null
+                });
+            }
+
+        }
     }
 }

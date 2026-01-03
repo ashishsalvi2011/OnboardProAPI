@@ -26,6 +26,17 @@ namespace OnboardPro.Repositories
                 return vendors.ToList();
             }
         }
+        public async Task<List<OnBoardWorkerDto>> GetWorkersForExit()
+        {
+            using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            {
+                var onBoardWorkers = await connection.QueryAsync<OnBoardWorkerDto>(
+                    "[sp_GetWorkersForExit]",
+                    commandType: CommandType.StoredProcedure
+                );
+                return onBoardWorkers.ToList();
+            }
+        }
         public async Task<int> ExitWorkerAsync(ExitWorkerDto dto)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
@@ -82,6 +93,25 @@ namespace OnboardPro.Repositories
 
                 var result = await connection.QueryFirstOrDefaultAsync<int>(
                     "[sp_InsertOrUpdateWorkerReward]",
+                    parameters,
+                    commandType: CommandType.StoredProcedure
+                );
+
+                return result;
+            }
+        }
+        public async Task<int> BlockOrUnblockWorkerAsync(WorkerBlockRequestDto dto)
+        {
+            using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            {
+                var parameters = new DynamicParameters();
+                parameters.Add("@WorkerID", dto.WorkerId);
+                parameters.Add("@Action", dto.Action);
+                parameters.Add("@Reason", dto.Reason);
+                parameters.Add("@UserID", dto.UserId);
+
+                var result = await connection.QueryFirstOrDefaultAsync<int>(
+                    "[sp_BlockOrUnblockWorker]",
                     parameters,
                     commandType: CommandType.StoredProcedure
                 );

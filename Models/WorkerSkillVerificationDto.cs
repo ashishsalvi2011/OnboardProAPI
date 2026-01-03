@@ -48,4 +48,13 @@ namespace OnboardPro.Models
         public bool IsVerify { get; set; }
         public int CreatedBy { get; set; }
     }
+    public class WorkerSkillVerificationReturnDto
+    {
+        public int VerificationId { get; set; }
+        public int WorkerId { get; set; }
+        public int SkillId { get; set; }
+        public string ReturnReason { get; set; } = string.Empty; 
+        public int UserId { get; set; }
+    }
+
 }

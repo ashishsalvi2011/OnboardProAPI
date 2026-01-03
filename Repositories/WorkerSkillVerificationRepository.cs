@@ -64,6 +64,27 @@ namespace OnboardPro.Repositories
                 return result;
             }
         }
+        public async Task<int> ReturnWorkerSkillVerification(WorkerSkillVerificationReturnDto dto)
+        {
+            using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            {
+                var parameters = new DynamicParameters();
+
+                parameters.Add("@WorkerID", dto.WorkerId);
+                parameters.Add("@SkillId", dto.SkillId);
+                parameters.Add("@ReturnReason", dto.ReturnReason);
+                parameters.Add("@UserID", dto.UserId);
+
+                var result = await connection.QueryFirstOrDefaultAsync<int>(
+                    "sp_ReturnWorkerSkillVerification",
+                    parameters,
+                    commandType: CommandType.StoredProcedure
+                );
+
+                return result;
+            }
+        }
+      
 
     }
 }

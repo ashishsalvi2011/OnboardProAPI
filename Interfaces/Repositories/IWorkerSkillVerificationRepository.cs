@@ -7,5 +7,6 @@ namespace OnboardPro.Interfaces.Repositories
         Task<List<WorkerSkillVerificationDto>> GetWorkersReadyForSkillVerificationAsync();
         Task<SkillAndProficiencyResponseDto> GetSkillAndProficiencyAsync();
         Task<int> SaveSkillVerificationAsync(WorkerSkillVerificationSubmitDto dto);
+        Task<int> ReturnWorkerSkillVerification(WorkerSkillVerificationReturnDto dto);
     }
 }

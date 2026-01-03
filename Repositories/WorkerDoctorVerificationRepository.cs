@@ -83,5 +83,24 @@ namespace OnboardPro.Repositories
 
             return table;
         }
+        public async Task<int> ReturnWorkerDoctorVerification(WorkerDoctorVerificationReturnDto dto)
+        {
+            using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            {
+                var parameters = new DynamicParameters();
+
+                parameters.Add("@WorkerID", dto.WorkerId);
+                parameters.Add("@ReturnReason", dto.ReturnReason);
+                parameters.Add("@UserID", dto.UserId);
+
+                var result = await connection.QueryFirstOrDefaultAsync<int>(
+                    "sp_ReturnWorkerDoctorVerification",
+                    parameters,
+                    commandType: CommandType.StoredProcedure
+                );
+
+                return result;
+            }
+        }
     }
 }

@@ -19,5 +19,9 @@ namespace OnboardPro.Services
         {
             return await _repository.SaveEHSVerificationAsync(dto);
         }
+        public async Task<int> ReturnWorkerEHSVerification(WorkerEHSVerificationReturnDto dto)
+        {
+            return await _repository.ReturnWorkerEHSVerification(dto);
+        }
     }
 }

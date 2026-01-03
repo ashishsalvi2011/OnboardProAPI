@@ -44,7 +44,6 @@ namespace OnboardPro.Controllers
 
         }
 
-
         [HttpGet("get")]
         [Authorize]
         public async Task<IActionResult> GetWorkersReadyForDoctorVerification()
@@ -72,7 +71,6 @@ namespace OnboardPro.Controllers
 
         }
 
-
         [HttpPost("save")]
         public async Task<IActionResult> Save([FromBody] DoctorVerificationRequestDto dto)
         {
@@ -89,6 +87,37 @@ namespace OnboardPro.Controllers
                              ? "Doctor Verification created successfully"
                              : "Doctor Verification updated successfully",
                     Data = newMedicalVerificationId
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new SingleResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = null
+                });
+            }
+
+        }
+
+        [HttpPost("return-verification")]
+        [Authorize]
+        public async Task<IActionResult> ReturnWorkerDoctorVerification([FromBody] WorkerDoctorVerificationReturnDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            try
+            {
+                var newDoctorVerificationReturnId = await _service.ReturnWorkerDoctorVerification(dto);
+                return Ok(new SingleResponseModel<int>
+                {
+                    Success = true,
+                    Message = newDoctorVerificationReturnId == null
+                             ? "Doctor Verification return created successfully"
+                             : "Doctor Verification return updated successfully",
+                    Data = newDoctorVerificationReturnId
                 });
             }
             catch (Exception ex)

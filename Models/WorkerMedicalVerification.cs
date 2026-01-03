@@ -11,7 +11,7 @@ namespace OnboardPro.Models
     {
         public int VerificationID { get; set; }  
 
-        public int WorkerID { get; set; }
+        public int WorkerId { get; set; }
 
         public DateTime HealthCheckupDate { get; set; }
 
@@ -40,6 +40,14 @@ namespace OnboardPro.Models
         [Required]
         public bool IsVerify { get; set; }
         public int CreatedBy { get; set; }
+    }
+
+    public class WorkerMedicalVerificationReturnDto
+    {
+        public int VerificationId { get; set; }
+        public int WorkerId { get; set; }
+        public string ReturnReason { get; set; } = string.Empty;
+        public int UserId { get; set; }
     }
 
 }

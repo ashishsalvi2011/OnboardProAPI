@@ -19,5 +19,9 @@ namespace OnboardPro.Services
         {
             return await _repository.SaveMedicalVerificationAsync(dto);
         }
+        public async Task<int> ReturnWorkerMedicalVerification(WorkerMedicalVerificationReturnDto dto)
+        {
+            return await _repository.ReturnWorkerMedicalVerification(dto);
+        }
     }
 }

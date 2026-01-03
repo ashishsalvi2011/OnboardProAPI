@@ -48,6 +48,8 @@ namespace OnboardPro.Extensions
             services.AddScoped<IWorkerPFRepository, WorkerPFRepository>();
             services.AddScoped<IViolationService, ViolationService>();
             services.AddScoped<IViolationRepository, ViolationRepository>();
+            services.AddScoped<IDashboardService, DashboardService>();
+            services.AddScoped<IDashboardRepository, DashboardRepository>();
 
             services.AddScoped<JwtService>();
             services.AddSingleton<IResponse, ResponseService>();

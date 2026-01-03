@@ -8,6 +8,9 @@
         public int? MedicalVerificationUserId { get; set; }
         public string MedicalVerificationBy { get; set; }
 
+        public int? DoctorVerificationUserId { get; set; }
+        public string DoctorVerificationBy { get; set; }
+
         public int WorkerCreatedUserId { get; set; }
         public string WorkerCreatedBy { get; set; }
     }
@@ -32,5 +35,11 @@
 
         public string UserID { get; set; } = string.Empty; // logged-in user
     }
-
+    public class WorkerEHSVerificationReturnDto
+    {
+        public int VerificationId { get; set; }
+        public int WorkerId { get; set; }
+        public string ReturnReason { get; set; } = string.Empty;
+        public int UserId { get; set; }
+    }
 }

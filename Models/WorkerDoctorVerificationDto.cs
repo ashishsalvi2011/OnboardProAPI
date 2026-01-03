@@ -24,5 +24,12 @@
         public bool Answer { get; set; }
         public string Remark { get; set; }
     }
+    public class WorkerDoctorVerificationReturnDto
+    {
+        public int VerificationId { get; set; }
+        public int WorkerId { get; set; }
+        public string ReturnReason { get; set; } = string.Empty;
+        public int UserId { get; set; }
+    }
 
 }

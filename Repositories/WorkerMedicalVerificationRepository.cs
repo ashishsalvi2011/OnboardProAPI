@@ -30,7 +30,7 @@ namespace OnboardPro.Repositories
             {
                 var parameters = new DynamicParameters();
                     parameters.Add("@VerificationID", dto.VerificationID);
-                    parameters.Add("@WorkerID", dto.WorkerID);
+                    parameters.Add("@WorkerID", dto.WorkerId);
                     parameters.Add("@HealthCheckDate", dto.HealthCheckupDate);
 
                     parameters.Add("@Pulse", dto.Pulse);
@@ -54,6 +54,25 @@ namespace OnboardPro.Repositories
 
                 var result = await connection.QueryFirstOrDefaultAsync<int>(
                     "[sp_InsertOrUpdateWorkerMedicalVerification]",
+                    parameters,
+                    commandType: CommandType.StoredProcedure
+                );
+
+                return result;
+            }
+        }
+        public async Task<int> ReturnWorkerMedicalVerification(WorkerMedicalVerificationReturnDto dto)
+        {
+            using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            {
+                var parameters = new DynamicParameters();
+
+                parameters.Add("@WorkerID", dto.WorkerId);
+                parameters.Add("@ReturnReason", dto.ReturnReason);
+                parameters.Add("@UserID", dto.UserId);
+
+                var result = await connection.QueryFirstOrDefaultAsync<int>(
+                    "sp_ReturnWorkerMedicalVerification",
                     parameters,
                     commandType: CommandType.StoredProcedure
                 );

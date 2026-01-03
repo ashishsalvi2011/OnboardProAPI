@@ -119,5 +119,16 @@ namespace OnboardPro.Repositories
                 return result;
             }
         }
+        public async Task<List<ReturnedWorkerDto>> GetReturnedWorkersAsync()
+        {
+            using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            {
+                var returnWorkers = await connection.QueryAsync<ReturnedWorkerDto>(
+                    "[sp_GetReturnedWorkerList]",
+                    commandType: CommandType.StoredProcedure
+                );
+                return returnWorkers.ToList();
+            }
+        }
     }
 }

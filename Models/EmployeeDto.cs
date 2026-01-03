@@ -77,6 +77,25 @@
         public bool IsActive { get; set; } = true;
         public int UserID { get; set; }
     }
+    public class ReturnedWorkerDto
+    {
+        public int VerificationID { get; set; }
+        public int WorkerId { get; set; }
 
+        public string WorkerName { get; set; }
+        public string MobileNumber { get; set; }
+
+        public string VerificationType { get; set; }   // Skill / Medical / Doctor / EHS
+        public string Status { get; set; }              // Returned from Skill etc.
+
+        public string VerificationStatus { get; set; }  // Returned
+        public string ReturnedReason { get; set; }
+
+        public int ReturnedBy { get; set; }
+        public string ReturnedByName { get; set; }
+
+        public DateTime ReturnedOn { get; set; }
+        public int AttemptNo { get; set; }
+    }
 
 }

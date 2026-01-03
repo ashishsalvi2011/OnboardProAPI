@@ -39,5 +39,9 @@ namespace OnboardPro.Services
         {
             return await _employeeRepository.BlockOrUnblockWorkerAsync(dto);
         }
+        public async Task<List<ReturnedWorkerDto>> GetReturnedWorkersAsync()
+        {
+            return await _employeeRepository.GetReturnedWorkersAsync();
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace OnboardPro.Interfaces.Repositories
         Task<List<WorkerIdCardDto>> GetWorkerIdCardAsync();
         Task<int> InsertOrUpdateWorkerRewardAsync(WorkerRewardUpsertDto dto);
         Task<int> BlockOrUnblockWorkerAsync(WorkerBlockRequestDto request);
+        Task<List<ReturnedWorkerDto>> GetReturnedWorkersAsync();
 
     }
 }

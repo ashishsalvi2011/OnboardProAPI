@@ -200,5 +200,31 @@ namespace OnboardPro.Controllers
                 });
             }
         }
+
+        [HttpGet("returned-workers")]
+        [Authorize]
+        public async Task<IActionResult> GetReturnedWorkersAsync()
+        {
+            try
+            {
+                var data = await _employeeService.GetReturnedWorkersAsync();
+                return Ok(new ListResponseModel<ReturnedWorkerDto>
+                {
+                    Success = true,
+                    Message = "Returned worker list loaded successfully",
+                    Data = data
+                });
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ListResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Internal Server Error: " + ex.Message,
+                    Data = null
+                });
+            }
+        }
     }
 }

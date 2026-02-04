@@ -26,12 +26,15 @@ namespace OnboardPro.Repositories
                 return vendors.ToList();
             }
         }
-        public async Task<List<OnBoardWorkerDto>> GetWorkersForExit()
+        public async Task<List<OnBoardWorkerDto>> GetWorkersForExit(int userId)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
             {
+                var parameters = new DynamicParameters();
+                parameters.Add("@userId", userId);
+
                 var onBoardWorkers = await connection.QueryAsync<OnBoardWorkerDto>(
-                    "[sp_GetWorkersForExit]",
+                    "[sp_GetWorkersForExit]", parameters,
                     commandType: CommandType.StoredProcedure
                 );
                 return onBoardWorkers.ToList();

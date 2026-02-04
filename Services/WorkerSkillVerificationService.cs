@@ -11,9 +11,9 @@ namespace OnboardPro.Services
         {
             _repository = repository;
         }
-        public async Task<List<WorkerSkillVerificationDto>> GetWorkersReadyForSkillVerificationAsync()
+        public async Task<List<WorkerSkillVerificationDto>> GetWorkersReadyForSkillVerificationAsync(int userId)
         {
-            return await _repository.GetWorkersReadyForSkillVerificationAsync();
+            return await _repository.GetWorkersReadyForSkillVerificationAsync(userId);
         }
         public async Task<SkillAndProficiencyResponseDto> GetSkillAndProficiencyAsync()
         {

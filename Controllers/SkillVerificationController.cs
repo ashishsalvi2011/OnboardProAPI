@@ -19,11 +19,11 @@ namespace OnboardPro.Controllers
 
         [HttpGet("get")]
         [Authorize]
-        public async Task<IActionResult> GetWorkersReadyForSkillVerification()
+        public async Task<IActionResult> GetWorkersReadyForSkillVerification(int userId)
         {
             try
             {
-                var data = await _service.GetWorkersReadyForSkillVerificationAsync();
+                var data = await _service.GetWorkersReadyForSkillVerificationAsync(userId);
                 return Ok(new ListResponseModel<WorkerSkillVerificationDto>
                 {
                     Success = true,

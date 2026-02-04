@@ -13,9 +13,9 @@ namespace OnboardPro.Services
             _repository = repository;
         }
 
-        public async Task<List<WorkerFinalApprovalDto>> GetFinalApprovalReadyWorkersAsync()
+        public async Task<List<WorkerFinalApprovalDto>> GetFinalApprovalReadyWorkersAsync(int userId)
         {
-            return await _repository.GetFinalApprovalReadyWorkersAsync();
+            return await _repository.GetFinalApprovalReadyWorkersAsync(userId);
         }
 
         public async Task<int> FinalApproveWorkerAsync(FinalApproveWorkerDto dto)

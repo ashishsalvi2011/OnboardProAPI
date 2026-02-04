@@ -35,5 +35,10 @@ namespace OnboardPro.Services
         public async Task<WorkerDetailsDto> GetWorkerById(int WorkerId) {
             return await _workerRepository.GetWorkerFullDetail(WorkerId);
         }
+        public async Task<string> GetNewWorkerId()
+        {
+            return await _workerRepository.GetNewWorkerId();
+        }
     }
 }
+

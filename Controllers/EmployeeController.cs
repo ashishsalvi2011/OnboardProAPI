@@ -45,11 +45,11 @@ namespace OnboardPro.Controllers
 
         [HttpGet("worker-for-exit")]
         [Authorize]
-        public async Task<IActionResult> GetWorkersForExit()
+        public async Task<IActionResult> GetWorkersForExit(int userId)
         {
             try
             {
-                var data = await _employeeService.GetWorkersForExit();
+                var data = await _employeeService.GetWorkersForExit(userId);
                 return Ok(new ListResponseModel<OnBoardWorkerDto>
                 {
                     Success = true,

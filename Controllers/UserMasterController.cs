@@ -44,6 +44,32 @@ namespace OnboardPro.Controllers
             }
         }
 
+        [HttpGet("new-user-id")]
+        [Authorize]
+        public async Task<IActionResult> GetNewUserId()
+        {
+            try
+            {
+                string newUserId = await _service.GetNewUserId();
+                return Ok(new SingleResponseModel<string>
+                {
+                    Success = true,
+                    Message = "New User Id loaded successfully",
+                    Data = newUserId
+                });
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new SingleResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Internal Server Error: " + ex.Message,
+                    Data = null
+                });
+            }
+        }
+
         [HttpPost("save")]
         [Authorize]
         public async Task<IActionResult> SaveUser([FromBody] UserDto user)

@@ -13,12 +13,16 @@ namespace OnboardPro.Repositories
         {
             _configuration = configuration;
         }
-        public async Task<List<WorkerSkillVerificationDto>> GetWorkersReadyForSkillVerificationAsync()
+        public async Task<List<WorkerSkillVerificationDto>> GetWorkersReadyForSkillVerificationAsync(int userId)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
             {
+                var parameters = new DynamicParameters();
+                parameters.Add("@userId", userId);
+
                 var workerSkills = await connection.QueryAsync<WorkerSkillVerificationDto>(
-                    "sp_GetWorkersReadyForSkillVerification",
+                    "sp_GetWorkersReadyForSkillVerification", 
+                    parameters,
                     commandType: CommandType.StoredProcedure
                 );
                 return workerSkills.ToList();

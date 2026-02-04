@@ -70,7 +70,7 @@ namespace OnboardPro.Models
 
         public int? NoOfChildren { get; set; }
 
-        public string? Photograph { get; set; }    // base64 / file path
+        public string? ProfilePhoto { get; set; }
 
         public bool IsOnboard { get; set; } = false;
 

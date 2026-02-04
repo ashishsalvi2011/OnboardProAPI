@@ -8,8 +8,10 @@
         public int? MedicalVerificationUserId { get; set; }
         public string MedicalVerificationBy { get; set; }
 
+
         public int? DoctorVerificationUserId { get; set; }
         public string DoctorVerificationBy { get; set; }
+        public string DoctorPrescription { get; set; }
 
         public int WorkerCreatedUserId { get; set; }
         public string WorkerCreatedBy { get; set; }

@@ -19,11 +19,11 @@ namespace OnboardPro.Controllers
 
         [HttpGet("get")]
         [Authorize]
-        public async Task<IActionResult> GetWorkersReadyForMedicalVerification()
+        public async Task<IActionResult> GetWorkersReadyForMedicalVerification(int userId)
         {
             try
             {
-                var data = await _service.GetWorkersReadyForMedicalVerificationAsync();
+                var data = await _service.GetWorkersReadyForMedicalVerificationAsync(userId);
                 return Ok(new ListResponseModel<WorkerMedicalVerificationDto>
                 {
                     Success = true,

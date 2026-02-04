@@ -15,11 +15,17 @@ namespace OnboardPro.Services
 
         public Task<List<RoleDto>> GetActiveRolesAsync() => _repo.GetActiveRolesAsync();
 
+        public async Task<string> GetNewUserId()
+        {
+            return await _repo.GetNewUserId();
+        }
+
         public async Task<int> SaveUserAsync(UserDto user)
         {
             return await _repo.InsertOrUpdateUserAsync(user);
         }
 
         public Task<List<UserResponseDto>> GetUsersAsync() => _repo.GetUsersAsync();
+
     }
 }

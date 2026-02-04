@@ -10,5 +10,6 @@ namespace OnboardPro.Interfaces.Repositories
         Task<int> InsertOrUpdateWorkerBankDetailsAsync(WorkerBankDetailsDto dto);
         Task<KYCPFSaveResponse> InsertOrUpdateWorkerKYCOrPFAsync(KYCPFSaveRequest dto);
         Task<WorkerDetailsDto> GetWorkerFullDetail(int workerId);
+        Task<string> GetNewWorkerId();
     }
 }

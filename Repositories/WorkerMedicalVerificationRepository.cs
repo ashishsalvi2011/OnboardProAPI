@@ -13,12 +13,16 @@ namespace OnboardPro.Repositories
         {
             _configuration = configuration;
         }
-        public async Task<List<WorkerMedicalVerificationDto>> GetWorkersReadyForMedicalVerificationAsync()
+        public async Task<List<WorkerMedicalVerificationDto>> GetWorkersReadyForMedicalVerificationAsync(int userId)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
             {
+                var parameters = new DynamicParameters();
+
+                parameters.Add("@userId", userId);
+
                 var workerSkills = await connection.QueryAsync<WorkerMedicalVerificationDto>(
-                    "[sp_GetWorkersReadyForMedicalVerification]",
+                    "[sp_GetWorkersReadyForMedicalVerification]", parameters,
                     commandType: CommandType.StoredProcedure
                 );
                 return workerSkills.ToList();

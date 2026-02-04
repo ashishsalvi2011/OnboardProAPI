@@ -19,11 +19,11 @@ namespace OnboardPro.Controllers
 
         [HttpGet("get")]
         [Authorize]
-        public async Task<IActionResult> GetWorkersReadyForEHSVerification()
+        public async Task<IActionResult> GetWorkersReadyForEHSVerification(int userId)
         {
             try
             {
-                var data = await _service.GetWorkersReadyForEHSVerificationAsync();
+                var data = await _service.GetWorkersReadyForEHSVerificationAsync(userId);
                 return Ok(new ListResponseModel<EHSVerificationPendingDto>
                 {
                     Success = true,

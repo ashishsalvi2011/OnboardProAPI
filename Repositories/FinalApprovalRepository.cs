@@ -14,12 +14,15 @@ namespace OnboardPro.Repositories
         {
             _configuration = configuration;
         }
-        public async Task<List<WorkerFinalApprovalDto>> GetFinalApprovalReadyWorkersAsync()
+        public async Task<List<WorkerFinalApprovalDto>> GetFinalApprovalReadyWorkersAsync(int userId)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
             {
+                var parameters = new DynamicParameters();
+                parameters.Add("@userId", userId);
+
                 var finalApproval = await connection.QueryAsync<WorkerFinalApprovalDto>(
-                    "[sp_GetWorkersReadyForFinalApproval]",
+                    "[sp_GetWorkersReadyForFinalApproval]", parameters,
                     commandType: CommandType.StoredProcedure
                 );
                 return finalApproval.ToList();

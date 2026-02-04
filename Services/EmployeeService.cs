@@ -15,9 +15,9 @@ namespace OnboardPro.Services
         {
             return await _employeeRepository.GetDraftWorkersAsync();
         }
-        public async Task<List<OnBoardWorkerDto>> GetWorkersForExit()
+        public async Task<List<OnBoardWorkerDto>> GetWorkersForExit(int userId)
         {
-            return await _employeeRepository.GetWorkersForExit();
+            return await _employeeRepository.GetWorkersForExit(userId);
         }
         public async Task<int> ExitWorkerAsync(ExitWorkerDto request)
         {

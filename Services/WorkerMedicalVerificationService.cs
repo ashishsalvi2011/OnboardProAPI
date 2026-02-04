@@ -11,9 +11,9 @@ namespace OnboardPro.Services
         {
             _repository = repository;
         }
-        public async Task<List<WorkerMedicalVerificationDto>> GetWorkersReadyForMedicalVerificationAsync()
+        public async Task<List<WorkerMedicalVerificationDto>> GetWorkersReadyForMedicalVerificationAsync(int userId)
         {
-            return await _repository.GetWorkersReadyForMedicalVerificationAsync();
+            return await _repository.GetWorkersReadyForMedicalVerificationAsync(userId);
         }
         public async Task<int> SaveMedicalVerificationAsync(WorkerMedicalVerificationRequestDto dto)
         {

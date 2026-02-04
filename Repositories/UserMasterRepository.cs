@@ -28,6 +28,18 @@ namespace OnboardPro.Repositories
                 return role.ToList();
             }
         }
+        public async Task<string> GetNewUserId()
+        {
+            using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            {
+                var newUserId = await connection.QueryFirstOrDefaultAsync<string>(
+                    "sp_GetNewUserId",
+                    commandType: CommandType.StoredProcedure
+                );
+
+                return newUserId.ToString();
+            }
+        }
         public async Task<int> InsertOrUpdateUserAsync(UserDto user)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));

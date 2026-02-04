@@ -11,9 +11,9 @@ namespace OnboardPro.Services
         {
             _repository = repository;
         }
-        public async Task<List<EHSVerificationPendingDto>> GetWorkersReadyForEHSVerificationAsync()
+        public async Task<List<EHSVerificationPendingDto>> GetWorkersReadyForEHSVerificationAsync(int userId)
         {
-            return await _repository.GetWorkersReadyForEHSVerificationAsync();
+            return await _repository.GetWorkersReadyForEHSVerificationAsync(userId);
         }
         public async Task<int> SaveEHSVerificationAsync(EHSVerificationSaveDto dto)
         {

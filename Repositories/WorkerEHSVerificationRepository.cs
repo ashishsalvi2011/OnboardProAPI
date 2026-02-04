@@ -13,15 +13,18 @@ namespace OnboardPro.Repositories
         {
             _configuration = configuration;
         }
-        public async Task<List<EHSVerificationPendingDto>> GetWorkersReadyForEHSVerificationAsync()
+        public async Task<List<EHSVerificationPendingDto>> GetWorkersReadyForEHSVerificationAsync(int userId)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
             {
-                var workerSkills = await connection.QueryAsync<EHSVerificationPendingDto>(
-                    "[sp_GetWorkersReadyForEHSVerificaton]",
+                var parameters = new DynamicParameters();
+                parameters.Add("@userId", userId);
+
+                var workerEHS = await connection.QueryAsync<EHSVerificationPendingDto>(
+                    "[sp_GetWorkersReadyForEHSVerificaton]", parameters,
                     commandType: CommandType.StoredProcedure
                 );
-                return workerSkills.ToList();
+                return workerEHS.ToList();
             }
         }
         public async Task<int> SaveEHSVerificationAsync(EHSVerificationSaveDto dto)

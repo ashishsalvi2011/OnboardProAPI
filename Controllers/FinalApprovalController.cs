@@ -18,11 +18,11 @@ namespace OnboardPro.Controllers
 
         [HttpGet("get")]
         [Authorize]
-        public async Task<IActionResult> GetFinalApprovalReadyWorkers()
+        public async Task<IActionResult> GetFinalApprovalReadyWorkers(int userId)
         {
             try
             {
-                var data = await _service.GetFinalApprovalReadyWorkersAsync();
+                var data = await _service.GetFinalApprovalReadyWorkersAsync(userId);
                 return Ok(new ListResponseModel<WorkerFinalApprovalDto>
                 {
                     Success = true,

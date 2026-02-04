@@ -207,6 +207,38 @@ namespace OnboardPro.Controllers
                 });
             }
         }
+
+        [HttpGet("new-worker-id")]
+        [Authorize]
+        public async Task<IActionResult> GetNewWorkerId()
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                string newWorkerId = await _workerService.GetNewWorkerId();
+
+                return Ok(new SingleResponseModel<string>
+                {
+                    Success = true,
+                    Message = newWorkerId == null
+                             ? "Worker id loaded successfully"
+                             : "Worker id loaded successfully",
+                    Data = newWorkerId
+                });
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(new SingleResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = null
+                });
+            }
+        }
     }
 }
 

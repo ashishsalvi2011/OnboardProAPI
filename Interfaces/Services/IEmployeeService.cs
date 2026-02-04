@@ -5,7 +5,7 @@ namespace OnboardPro.Interfaces.Services
     public interface IEmployeeService
     {
         Task<List<DraftWorkerDto>> GetDraftWorkersAsync();
-        Task<List<OnBoardWorkerDto>> GetWorkersForExit();
+        Task<List<OnBoardWorkerDto>> GetWorkersForExit(int userId);
         Task<int> ExitWorkerAsync(ExitWorkerDto request);
         Task<List<OnBoardWorkerDto>> GetOnBoardWorkersAsync();
         Task<List<WorkerIdCardDto>> GetIdCardDetails();

@@ -10,6 +10,7 @@ namespace OnboardPro.Interfaces.Services
         Task<int> SaveWorkerBankDetailsAsync(WorkerBankDetailsDto dto);
         Task<KYCPFSaveResponse> SaveWorkerKYCOrPFAsync(KYCPFSaveRequest dto);
         Task<WorkerDetailsDto> GetWorkerById(int WorkerId);
+        Task<string> GetNewWorkerId();
 
     }
 }

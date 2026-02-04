@@ -25,12 +25,17 @@ namespace OnboardPro.Repositories
                 return questions.ToList();
             }
         }
-        public async Task<List<WorkerDoctorVerificationDto>> GetWorkersReadyForDoctorVerificationAsync()
+        public async Task<List<WorkerDoctorVerificationDto>> GetWorkersReadyForDoctorVerificationAsync(int userId)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
             {
+                var parameters = new DynamicParameters();
+
+                parameters.Add("@UserId", userId);
+
                 var workerReadyForDoctorVerification = await connection.QueryAsync<WorkerDoctorVerificationDto>(
                     "[sp_GetWorkersReadyForDoctorVerification]",
+                    parameters,
                     commandType: CommandType.StoredProcedure
                 );
                 return workerReadyForDoctorVerification.ToList();

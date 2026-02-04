@@ -48,7 +48,7 @@ namespace OnboardPro.Repositories
             parameters.Add("@CrimeGuilty", worker.CrimeGuilty);
             parameters.Add("@NoOfChildren", worker.NoOfChildren);
 
-            parameters.Add("@Photograph", worker.Photograph);
+            parameters.Add("@Photograph", worker.ProfilePhoto);
 
             parameters.Add("@IsOnboard", worker.IsOnboard);
             parameters.Add("@HROnboardedBy", worker.HROnboardedBy);
@@ -260,6 +260,7 @@ namespace OnboardPro.Repositories
                 parameterspf.Add("@UniversalAccountName", kycPf.Pf.UniversalAccountName);
                 parameterspf.Add("@PFNumber", kycPf.Pf.PFNumber);
                 parameterspf.Add("@ESINumber", kycPf.Pf.ESINumber);
+                parameterspf.Add("@Signature", kycPf.Pf.Signature);
                 parameterspf.Add("@IsActive", kycPf.Pf.IsActive);
                 parameterspf.Add("@UserID", kycPf.UserID);
 
@@ -284,12 +285,6 @@ namespace OnboardPro.Repositories
                 await transaction.RollbackAsync();
                 throw;
             }
-
-
-
-
-
-        
         }
         public async Task<WorkerDetailsDto> GetWorkerFullDetail(int workerId)
         {
@@ -326,6 +321,19 @@ namespace OnboardPro.Repositories
                 };
             }
         }
-        
+        public async Task<string> GetNewWorkerId()
+        {
+            using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            {
+
+                var newWorkerId = await connection.QueryFirstOrDefaultAsync<string>(
+                    "sp_GetNewWorkerId",
+                    commandType: CommandType.StoredProcedure
+                );
+
+                return newWorkerId;
+            }
+        }
+
     }
 }

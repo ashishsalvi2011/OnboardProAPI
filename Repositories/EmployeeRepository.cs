@@ -15,12 +15,15 @@ namespace OnboardPro.Repositories
         {
             _configuration = configuration;
         }
-        public async Task<List<DraftWorkerDto>> GetDraftWorkersAsync()
+        public async Task<List<DraftWorkerDto>> GetDraftWorkersAsync(int userId)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
             {
+                var parameters = new DynamicParameters();
+                parameters.Add("@userId", userId);
+
                 var vendors = await connection.QueryAsync<DraftWorkerDto>(
-                    "sp_GetDraftWorkers",
+                    "sp_GetDraftWorkers", parameters,
                     commandType: CommandType.StoredProcedure
                 );
                 return vendors.ToList();
@@ -60,23 +63,30 @@ namespace OnboardPro.Repositories
                 return result;
             }
         }
-        public async Task<List<OnBoardWorkerDto>> GetOnBoardWorkersAsync()
+        public async Task<List<OnBoardWorkerDto>> GetOnBoardWorkersAsync(int userId)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
             {
+                var parameters = new DynamicParameters();
+                parameters.Add("@userId", userId);
+
                 var onBoardWorkers = await connection.QueryAsync<OnBoardWorkerDto>(
-                    "[sp_GetOnBoardWorkers]",
+                    "[sp_GetOnBoardWorkers]", parameters,
                     commandType: CommandType.StoredProcedure
                 );
                 return onBoardWorkers.ToList();
             }
         }
-        public async Task<List<WorkerIdCardDto>> GetWorkerIdCardAsync()
+        public async Task<List<WorkerIdCardDto>> GetWorkerIdCardAsync(int userId)
         {
+
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
             {
+                var parameters = new DynamicParameters();
+                parameters.Add("@userId", userId);
+
                 var idCardDetails = await connection.QueryAsync<WorkerIdCardDto>(
-                    "sp_GetIDCardDetails",
+                    "sp_GetIDCardDetails", parameters,
                     commandType: CommandType.StoredProcedure
                 );
                 return idCardDetails.ToList();
@@ -122,16 +132,41 @@ namespace OnboardPro.Repositories
                 return result;
             }
         }
-        public async Task<List<ReturnedWorkerDto>> GetReturnedWorkersAsync()
+        public async Task<List<ReturnedWorkerDto>> GetReturnedWorkersAsync(int userId)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
             {
+                var parameters = new DynamicParameters();
+                parameters.Add("@userId", userId);
+
                 var returnWorkers = await connection.QueryAsync<ReturnedWorkerDto>(
-                    "[sp_GetReturnedWorkerList]",
+                    "[sp_GetReturnedWorkerList]", parameters,
                     commandType: CommandType.StoredProcedure
                 );
                 return returnWorkers.ToList();
             }
         }
+        public async Task<int> UpdateWokerGatePassDetails(WorkerWageDto dto)
+        {
+            using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
+            {
+                var parameters = new DynamicParameters();
+                parameters.Add("@WorkerId", dto.WorkerId);
+                parameters.Add("@FromDate", dto.FromDate);
+                parameters.Add("@ToDate", dto.ToDate);
+                parameters.Add("@DailyWage", dto.DailyWage);
+                parameters.Add("@EmergencyContact", dto.EmergencyContact);
+                parameters.Add("@UserId", dto.UserId);
+
+                var result = await connection.QueryFirstOrDefaultAsync<int>(
+                    "[sp_UpdateWokerGatePassDetails]",
+                    parameters,
+                    commandType: CommandType.StoredProcedure
+                );
+
+                return result;
+            }
+        }
+
     }
 }

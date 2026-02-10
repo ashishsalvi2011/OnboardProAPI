@@ -11,9 +11,9 @@ namespace OnboardPro.Services
         {
             _repository = repository;
         }
-        public async Task<List<WorkerPFDto>> GetWorkersDeatilsForPFAsync()
+        public async Task<List<WorkerPFDto>> GetWorkersDeatilsForPFAsync(int userId)
         {
-            return await _repository.GetWorkersDeatilsForPFAsync();
+            return await _repository.GetWorkersDeatilsForPFAsync(userId);
         }
         public async Task<int> SavePFAsync(WorkerPfEsiUpsertDto dto)
         {

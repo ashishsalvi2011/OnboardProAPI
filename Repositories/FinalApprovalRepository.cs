@@ -9,6 +9,7 @@ namespace OnboardPro.Repositories
 {
     public class FinalApprovalRepository : IFinalApprovalRepository
     {
+
         private readonly IConfiguration _configuration;
         public FinalApprovalRepository(IConfiguration configuration)
         {
@@ -47,5 +48,6 @@ namespace OnboardPro.Repositories
                 return result;
             }
         }
+
     }
 }

@@ -25,9 +25,9 @@ namespace OnboardPro.Services
             return await _projectRepository.InsertOrUpdateProjectAsync(model);
         }
 
-        public Task<List<ProjectListDto>> GetProjectsAsync()
+        public Task<List<ProjectListDto>> GetProjectsAsync(int userId)
         {
-            return _projectRepository.GetProjectsAsync();
+            return _projectRepository.GetProjectsAsync(userId);
         }
     }
 }

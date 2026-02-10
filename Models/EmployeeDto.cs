@@ -29,13 +29,17 @@
         public int WorkerID { get; set; }
         public string FullName { get; set; }
         public string MobileNumber { get; set; }
-
+        public string AadhaarNumber { get; set; }
         public int ProjectID { get; set; }
-        public string ProjectName { get; set; }
-
+        public string Designation { get; set; }
+        public decimal DailyWage { get; set; }
+        public string EmergencyContact { get; set; }
+        public DateTime WageFromDate { get; set; }
+        public DateTime WageToDate { get; set; }        
+        public int HeightTest { get; set; }
+        public string ProjectName { get; set; }         
         public int VendorId { get; set; }
         public string VendorName { get; set; }
-
         public string Status { get; set; }
         public bool IsActive { get; set; }
     }
@@ -96,6 +100,20 @@
 
         public DateTime ReturnedOn { get; set; }
         public int AttemptNo { get; set; }
+    }
+    public class WorkerWageDto
+    {
+        public int WorkerId { get; set; }
+
+        public decimal DailyWage { get; set; }
+
+        public DateTime FromDate { get; set; }
+
+        public DateTime ToDate { get; set; }
+
+        public string EmergencyContact { get; set; }
+
+        public int UserId { get; set; }
     }
 
 }

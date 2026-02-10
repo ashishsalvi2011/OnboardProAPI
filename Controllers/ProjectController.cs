@@ -57,11 +57,11 @@ namespace OnboardPro.Controllers
 
         [HttpGet("list")]
         [Authorize]
-        public async Task<IActionResult> GetProjects()
+        public async Task<IActionResult> GetProjects(int userId)
         {
             try
             {
-                var data = await _service.GetProjectsAsync();
+                var data = await _service.GetProjectsAsync(userId);
 
                 return Ok(new ListResponseModel<ProjectListDto>
                 {

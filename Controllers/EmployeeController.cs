@@ -19,11 +19,11 @@ namespace OnboardPro.Controllers
 
         [HttpGet("draft")]
         [Authorize]
-        public async Task<IActionResult> GetDraftWorkers()
+        public async Task<IActionResult> GetDraftWorkers(int userId)
         {
             try
             {
-                var data = await _employeeService.GetDraftWorkersAsync();
+                var data = await _employeeService.GetDraftWorkersAsync(userId);
                 return Ok(new ListResponseModel<DraftWorkerDto>
                 {
                     Success = true,
@@ -97,11 +97,11 @@ namespace OnboardPro.Controllers
 
         [HttpGet("onboard")]
         [Authorize]
-        public async Task<IActionResult> GetOnboardWorkers()
+        public async Task<IActionResult> GetOnboardWorkers(int userId)
         {
             try
             {
-                var data = await _employeeService.GetOnBoardWorkersAsync();
+                var data = await _employeeService.GetOnBoardWorkersAsync(userId);
                 return Ok(new ListResponseModel<OnBoardWorkerDto>
                 {
                     Success = true,
@@ -123,12 +123,12 @@ namespace OnboardPro.Controllers
 
         [HttpGet("id-card")]
         [Authorize]
-        public async Task<IActionResult> GetWorkerIdCard()
+        public async Task<IActionResult> GetWorkerIdCard(int userId)
         {
 
             try
             {
-                var data = await _employeeService.GetIdCardDetails();
+                var data = await _employeeService.GetIdCardDetails(userId);
                 return Ok(new ListResponseModel<WorkerIdCardDto>
                 {
                     Success = true,
@@ -203,15 +203,41 @@ namespace OnboardPro.Controllers
 
         [HttpGet("returned-workers")]
         [Authorize]
-        public async Task<IActionResult> GetReturnedWorkersAsync()
+        public async Task<IActionResult> GetReturnedWorkersAsync(int userId)
         {
             try
             {
-                var data = await _employeeService.GetReturnedWorkersAsync();
+                var data = await _employeeService.GetReturnedWorkersAsync(userId);
                 return Ok(new ListResponseModel<ReturnedWorkerDto>
                 {
                     Success = true,
                     Message = "Returned worker list loaded successfully",
+                    Data = data
+                });
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ListResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Internal Server Error: " + ex.Message,
+                    Data = null
+                });
+            }
+        }
+
+        [HttpPost("update-gate-pass")]
+        [Authorize]
+        public async Task<IActionResult> UpdateWokerGatePassDetails([FromBody] WorkerWageDto dto)
+        {
+            try
+            {
+                var data = await _employeeService.UpdateWokerGatePassDetails(dto);
+                return Ok(new SingleResponseModel<int>
+                {
+                    Success = true,
+                    Message = "Updated worker gate pass details successfully",
                     Data = data
                 });
 

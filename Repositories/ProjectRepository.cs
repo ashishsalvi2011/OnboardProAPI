@@ -9,14 +9,11 @@ namespace OnboardPro.Repositories
 {
     public class ProjectRepository : IProjectRepository
     {
-
         private readonly IConfiguration _configuration;
-
         public ProjectRepository(IConfiguration configuration)
         {
             _configuration = configuration;
         }
-
         public async Task<int> InsertOrUpdateProjectAsync(ProjectDto model)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
@@ -40,17 +37,19 @@ namespace OnboardPro.Repositories
 
             return result;
         }
-
-        public async Task<List<ProjectListDto>> GetProjectsAsync()
+        public async Task<List<ProjectListDto>> GetProjectsAsync(int userId)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
 
+            var parameters = new DynamicParameters();
+            parameters.Add("@userId", userId);
+
             var result = await connection.QueryAsync<ProjectListDto>(
-                "sp_GetProjects",
+                "sp_GetProjects",parameters,
                 commandType: CommandType.StoredProcedure
             );
 
             return result.ToList();
-        }
+        }    
     }
 }

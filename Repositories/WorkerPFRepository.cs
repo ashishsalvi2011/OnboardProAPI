@@ -13,12 +13,15 @@ namespace OnboardPro.Repositories
         {
             _configuration = configuration;
         }
-        public async Task<List<WorkerPFDto>> GetWorkersDeatilsForPFAsync()
+        public async Task<List<WorkerPFDto>> GetWorkersDeatilsForPFAsync(int userId)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
             {
+                var parameters = new DynamicParameters();
+                parameters.Add("@userId", userId);
+
                 var workerPFDetails = await connection.QueryAsync<WorkerPFDto>(
-                    "[sp_GetWorkerDetailsForPF]",
+                    "[sp_GetWorkerDetailsForPF]", parameters,
                     commandType: CommandType.StoredProcedure
                 );
                 return workerPFDetails.ToList();

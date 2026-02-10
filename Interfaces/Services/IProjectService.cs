@@ -5,6 +5,6 @@ namespace OnboardPro.Interfaces.Services
     public interface IProjectService
     {
         Task<int> InsertOrUpdateProjectAsync(ProjectDto model);
-        Task<List<ProjectListDto>> GetProjectsAsync();
+        Task<List<ProjectListDto>> GetProjectsAsync(int userId);
     }
 }

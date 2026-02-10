@@ -19,11 +19,11 @@ namespace OnboardPro.Controllers
 
         [HttpGet("get")]
         [Authorize]
-        public async Task<IActionResult> GetWorkerListForPFDetails()
+        public async Task<IActionResult> GetWorkerListForPFDetails(int userId)
         {
             try
             {
-                var data = await _service.GetWorkersDeatilsForPFAsync();
+                var data = await _service.GetWorkersDeatilsForPFAsync(userId);
                 return Ok(new ListResponseModel<WorkerPFDto>
                 {
                     Success = true,

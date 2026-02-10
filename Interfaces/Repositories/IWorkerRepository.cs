@@ -11,5 +11,6 @@ namespace OnboardPro.Interfaces.Repositories
         Task<KYCPFSaveResponse> InsertOrUpdateWorkerKYCOrPFAsync(KYCPFSaveRequest dto);
         Task<WorkerDetailsDto> GetWorkerFullDetail(int workerId);
         Task<string> GetNewWorkerId();
+
     }
 }

@@ -11,9 +11,9 @@ namespace OnboardPro.Services
         {
             _employeeRepository = employeeRepository;
         }
-        public async Task<List<DraftWorkerDto>> GetDraftWorkersAsync()
+        public async Task<List<DraftWorkerDto>> GetDraftWorkersAsync(int userId)
         {
-            return await _employeeRepository.GetDraftWorkersAsync();
+            return await _employeeRepository.GetDraftWorkersAsync(userId);
         }
         public async Task<List<OnBoardWorkerDto>> GetWorkersForExit(int userId)
         {
@@ -23,13 +23,13 @@ namespace OnboardPro.Services
         {
             return await _employeeRepository.ExitWorkerAsync(request);
         }
-        public async Task<List<OnBoardWorkerDto>> GetOnBoardWorkersAsync()
+        public async Task<List<OnBoardWorkerDto>> GetOnBoardWorkersAsync(int userId)
         {
-            return await _employeeRepository.GetOnBoardWorkersAsync();
+            return await _employeeRepository.GetOnBoardWorkersAsync(userId);
         }
-        public async Task<List<WorkerIdCardDto>> GetIdCardDetails()
+        public async Task<List<WorkerIdCardDto>> GetIdCardDetails(int userId)
         {
-            return await _employeeRepository.GetWorkerIdCardAsync();
+            return await _employeeRepository.GetWorkerIdCardAsync(userId);
         }
         public async Task<int> InsertOrUpdateRewardAsync(WorkerRewardUpsertDto dto)
         {
@@ -39,9 +39,13 @@ namespace OnboardPro.Services
         {
             return await _employeeRepository.BlockOrUnblockWorkerAsync(dto);
         }
-        public async Task<List<ReturnedWorkerDto>> GetReturnedWorkersAsync()
+        public async Task<List<ReturnedWorkerDto>> GetReturnedWorkersAsync(int userId)
         {
-            return await _employeeRepository.GetReturnedWorkersAsync();
+            return await _employeeRepository.GetReturnedWorkersAsync(userId);
+        }
+        public async Task<int> UpdateWokerGatePassDetails(WorkerWageDto request)
+        {
+            return await _employeeRepository.UpdateWokerGatePassDetails(request);
         }
     }
 }

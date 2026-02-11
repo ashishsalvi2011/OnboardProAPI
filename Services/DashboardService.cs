@@ -13,9 +13,9 @@ namespace OnboardPro.Services
         {
             _dashboardRepo = dashboardRepo;
         }
-        public async Task<List<DashboardStatDto>> GeDashboardStatsDatails()
+        public async Task<List<DashboardStatDto>> GeDashboardStatsDatails(int userId)
         {
-            return await _dashboardRepo.GeDashboardStatsDatails();
+            return await _dashboardRepo.GeDashboardStatsDatails(userId);
         }
 
     }

@@ -23,5 +23,11 @@ namespace OnboardPro.Services
         {
             return await _repository.ReturnWorkerEHSVerification(dto);
         }
+
+        public async Task<List<WorkerHealthDto>> GetWorkerHealthDetails(int workerId)
+        {
+            return await _repository.GetWorkerHealthDetails(workerId);
+        }
+        
     }
 }

@@ -81,5 +81,20 @@ namespace OnboardPro.Repositories
                 return result;
             }
         }
+        public async Task<List<WorkerHealthDto>> GetWorkerHealthDetails(int workerId)
+        {
+            using var connection = new SqlConnection(
+                _configuration.GetConnectionString("App1"));
+
+            var parameters = new DynamicParameters();
+            parameters.Add("@WorkerID", workerId);
+
+            var result = await connection.QueryAsync<WorkerHealthDto>(
+                "sp_GetWorkerHealthCheckByWorkerID",
+                parameters,
+                commandType: CommandType.StoredProcedure);
+
+            return result.ToList();
+        }
     }
 }

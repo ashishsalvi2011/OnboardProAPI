@@ -4,6 +4,6 @@ namespace OnboardPro.Interfaces.Repositories
 {
     public interface IDashboardRepository
     {
-        Task<List<DashboardStatDto>> GeDashboardStatsDatails();
+        Task<List<DashboardStatDto>> GeDashboardStatsDatails(int userId);
     }
 }

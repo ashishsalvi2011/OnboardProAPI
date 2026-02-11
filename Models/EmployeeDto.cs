@@ -104,15 +104,10 @@
     public class WorkerWageDto
     {
         public int WorkerId { get; set; }
-
         public decimal DailyWage { get; set; }
-
         public DateTime FromDate { get; set; }
-
         public DateTime ToDate { get; set; }
-
         public string EmergencyContact { get; set; }
-
         public int UserId { get; set; }
     }
 

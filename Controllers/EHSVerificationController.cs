@@ -106,5 +106,32 @@ namespace OnboardPro.Controllers
             }
 
         }
+
+        [HttpGet("worker-health")]
+        [Authorize]
+        public async Task<IActionResult> GetWorkerHealth(int workerId)
+        {
+            try
+            {
+                var data = await _service.GetWorkerHealthDetails(workerId);
+                return Ok(new ListResponseModel<WorkerHealthDto>
+                {
+                    Success = true,
+                    Message = "worker health details loaded successfully",
+                    Data = data
+                });
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ListResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Internal Server Error: " + ex.Message,
+                    Data = null
+                });
+            }
+
+        }
     }
 }

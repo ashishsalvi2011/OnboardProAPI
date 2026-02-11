@@ -4,6 +4,6 @@ namespace OnboardPro.Interfaces.Services
 {
     public interface IDashboardService
     {
-        Task<List<DashboardStatDto>> GeDashboardStatsDatails();
+        Task<List<DashboardStatDto>> GeDashboardStatsDatails(int userId);
     }
 }

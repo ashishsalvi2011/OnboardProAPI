@@ -44,4 +44,21 @@
         public string ReturnReason { get; set; } = string.Empty;
         public int UserId { get; set; }
     }
+    public class WorkerHealthDto
+    {
+        public int WorkerID { get; set; }
+        public DateTime HealthCheckDate { get; set; }
+        public decimal Pulse { get; set; }
+        public decimal SPO2 { get; set; }
+        public int RespiratoryRate { get; set; }
+        public decimal SkinTemperatureDegC { get; set; }
+        public int BP_Systolic { get; set; }
+        public int BP_Diastolic { get; set; }
+        public decimal Sugar { get; set; }
+        public decimal WeightKg { get; set; }
+        public decimal HeightCm { get; set; }
+        public decimal BMI { get; set; }
+        public string BloodGroup { get; set; }
+    }
+
 }

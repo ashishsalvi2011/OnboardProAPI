@@ -17,11 +17,11 @@ namespace OnboardPro.Controllers
         }
 
         [HttpGet("dashboard-stats")]
-        public async Task<IActionResult> GeDashboardStatsDatails()
+        public async Task<IActionResult> GeDashboardStatsDatails(int userId)
         {
             try
             { 
-                var data = await _dashboardService.GeDashboardStatsDatails();
+                var data = await _dashboardService.GeDashboardStatsDatails(userId);
 
                 return Ok(new ListResponseModel<DashboardStatDto>
                 {

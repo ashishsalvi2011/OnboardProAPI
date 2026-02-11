@@ -14,12 +14,15 @@ namespace OnboardPro.Repositories
         {
             _configuration = configuration;
         }
-        public async Task<List<DashboardStatDto>> GeDashboardStatsDatails()
+        public async Task<List<DashboardStatDto>> GeDashboardStatsDatails(int userId)
         {
             using var connection = new SqlConnection(_configuration.GetConnectionString("App1"));
 
+            var parameters = new DynamicParameters();
+            parameters.Add("@userId", userId);
+
             var dashboardStat = await connection.QueryAsync<DashboardStatDto>(
-                "sp_GetEmployeeDashboardStats",
+                "sp_GetEmployeeDashboardStats", parameters,
                 commandType: CommandType.StoredProcedure
             );
 
